@@ -38,10 +38,11 @@ namespace MUASAM
                 currentBtn = (IconButton)senderBtn;
                 currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                 currentBtn.ForeColor = color;
+                currentBtn.Padding= new Padding(0);
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+               // currentBtn.IconColor = color;
+                //currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                //currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 //Left border button
                 leftBorderBtn.BackColor = color;
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
@@ -59,10 +60,11 @@ namespace MUASAM
             {
                 currentBtn.BackColor = Color.FromArgb(35, 40, 52);
                 currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.Padding = new Padding(18,0,0,0);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+                //currentBtn.IconColor = Color.Gainsboro;
+                //currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                //currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
 
@@ -137,30 +139,40 @@ namespace MUASAM
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void btgiadung_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Giadung());
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void bt_dientu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
+        private void bt_thoitrangnam_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
+        private void bt_thoitrangnu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
         }
 
-        private void iconButton5_Click(object sender, EventArgs e)
+        private void bt_mypham_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+        }
+
+        private void bt_nhasach_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

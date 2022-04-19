@@ -20,3 +20,9 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.pdb
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Home.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Giadung.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.CTSanPham.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\zxing.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\zxing.presentation.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\zxing.xml
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\zxing.presentation.xml
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Xemthem.resources

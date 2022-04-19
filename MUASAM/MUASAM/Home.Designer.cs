@@ -35,16 +35,17 @@ namespace MUASAM
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.bt_nhasach = new FontAwesome.Sharp.IconButton();
+            this.bt_GioHang = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.bt_mypham = new FontAwesome.Sharp.IconButton();
+            this.bt_thoitrangnu = new FontAwesome.Sharp.IconButton();
+            this.bt_thoitrangnam = new FontAwesome.Sharp.IconButton();
+            this.bt_dientu = new FontAwesome.Sharp.IconButton();
+            this.bt_giadung = new FontAwesome.Sharp.IconButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.iconButton_mini = new FontAwesome.Sharp.IconButton();
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
-            this.bt_GioHang = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,13 +78,14 @@ namespace MUASAM
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.bt_nhasach);
             this.panelMenu.Controls.Add(this.bt_GioHang);
             this.panelMenu.Controls.Add(this.pictureBox1);
-            this.panelMenu.Controls.Add(this.iconButton5);
-            this.panelMenu.Controls.Add(this.iconButton4);
-            this.panelMenu.Controls.Add(this.iconButton3);
-            this.panelMenu.Controls.Add(this.iconButton2);
-            this.panelMenu.Controls.Add(this.iconButton1);
+            this.panelMenu.Controls.Add(this.bt_mypham);
+            this.panelMenu.Controls.Add(this.bt_thoitrangnu);
+            this.panelMenu.Controls.Add(this.bt_thoitrangnam);
+            this.panelMenu.Controls.Add(this.bt_dientu);
+            this.panelMenu.Controls.Add(this.bt_giadung);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 22);
             this.panelMenu.Name = "panelMenu";
@@ -92,11 +94,43 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Location = new System.Drawing.Point(200, 22);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(784, 619);
             this.panelDesktop.TabIndex = 9;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // bt_nhasach
+            // 
+            this.bt_nhasach.FlatAppearance.BorderSize = 0;
+            this.bt_nhasach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_nhasach.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_nhasach.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_nhasach.IconColor = System.Drawing.Color.Beige;
+            this.bt_nhasach.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_nhasach.Location = new System.Drawing.Point(0, 416);
+            this.bt_nhasach.Name = "bt_nhasach";
+            this.bt_nhasach.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_nhasach.Size = new System.Drawing.Size(200, 55);
+            this.bt_nhasach.TabIndex = 12;
+            this.bt_nhasach.Text = "NHÀ SÁCH";
+            this.bt_nhasach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_nhasach.UseVisualStyleBackColor = true;
+            this.bt_nhasach.Click += new System.EventHandler(this.bt_nhasach_Click);
+            // 
+            // bt_GioHang
+            // 
+            this.bt_GioHang.FlatAppearance.BorderSize = 0;
+            this.bt_GioHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_GioHang.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.bt_GioHang.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_GioHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_GioHang.IconSize = 60;
+            this.bt_GioHang.Location = new System.Drawing.Point(55, 538);
+            this.bt_GioHang.Name = "bt_GioHang";
+            this.bt_GioHang.Size = new System.Drawing.Size(75, 69);
+            this.bt_GioHang.TabIndex = 11;
+            this.bt_GioHang.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -108,85 +142,95 @@ namespace MUASAM
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // iconButton5
+            // bt_mypham
             // 
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Beige;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(0, 355);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(200, 55);
-            this.iconButton5.TabIndex = 9;
-            this.iconButton5.Text = "SÁCH";
-            this.iconButton5.UseVisualStyleBackColor = true;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            this.bt_mypham.FlatAppearance.BorderSize = 0;
+            this.bt_mypham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_mypham.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_mypham.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_mypham.IconColor = System.Drawing.Color.Beige;
+            this.bt_mypham.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_mypham.Location = new System.Drawing.Point(0, 355);
+            this.bt_mypham.Name = "bt_mypham";
+            this.bt_mypham.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_mypham.Size = new System.Drawing.Size(200, 55);
+            this.bt_mypham.TabIndex = 9;
+            this.bt_mypham.Text = "MỸ PHẨM - TRANG SỨC";
+            this.bt_mypham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_mypham.UseVisualStyleBackColor = true;
+            this.bt_mypham.Click += new System.EventHandler(this.bt_mypham_Click);
             // 
-            // iconButton4
+            // bt_thoitrangnu
             // 
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Beige;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(0, 294);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(200, 55);
-            this.iconButton4.TabIndex = 3;
-            this.iconButton4.Text = "THỜI TRANG NỮ";
-            this.iconButton4.UseVisualStyleBackColor = true;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.bt_thoitrangnu.FlatAppearance.BorderSize = 0;
+            this.bt_thoitrangnu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_thoitrangnu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_thoitrangnu.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_thoitrangnu.IconColor = System.Drawing.Color.Beige;
+            this.bt_thoitrangnu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_thoitrangnu.Location = new System.Drawing.Point(0, 294);
+            this.bt_thoitrangnu.Name = "bt_thoitrangnu";
+            this.bt_thoitrangnu.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_thoitrangnu.Size = new System.Drawing.Size(200, 55);
+            this.bt_thoitrangnu.TabIndex = 3;
+            this.bt_thoitrangnu.Text = "THỜI TRANG NỮ";
+            this.bt_thoitrangnu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_thoitrangnu.UseVisualStyleBackColor = true;
+            this.bt_thoitrangnu.Click += new System.EventHandler(this.bt_thoitrangnu_Click);
             // 
-            // iconButton3
+            // bt_thoitrangnam
             // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Beige;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(0, 233);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(200, 55);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "THỜI TRANG NAM";
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.bt_thoitrangnam.FlatAppearance.BorderSize = 0;
+            this.bt_thoitrangnam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_thoitrangnam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_thoitrangnam.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_thoitrangnam.IconColor = System.Drawing.Color.Beige;
+            this.bt_thoitrangnam.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_thoitrangnam.Location = new System.Drawing.Point(0, 233);
+            this.bt_thoitrangnam.Name = "bt_thoitrangnam";
+            this.bt_thoitrangnam.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_thoitrangnam.Size = new System.Drawing.Size(200, 55);
+            this.bt_thoitrangnam.TabIndex = 2;
+            this.bt_thoitrangnam.Text = "THỜI TRANG NAM";
+            this.bt_thoitrangnam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_thoitrangnam.UseVisualStyleBackColor = true;
+            this.bt_thoitrangnam.Click += new System.EventHandler(this.bt_thoitrangnam_Click);
             // 
-            // iconButton2
+            // bt_dientu
             // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Beige;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(0, 172);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(200, 55);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "ĐIỆN - ĐIỆN TỬ";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.bt_dientu.FlatAppearance.BorderSize = 0;
+            this.bt_dientu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_dientu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_dientu.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_dientu.IconColor = System.Drawing.Color.Beige;
+            this.bt_dientu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_dientu.Location = new System.Drawing.Point(0, 172);
+            this.bt_dientu.Name = "bt_dientu";
+            this.bt_dientu.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_dientu.Size = new System.Drawing.Size(200, 55);
+            this.bt_dientu.TabIndex = 1;
+            this.bt_dientu.Text = "ĐIỆN TỬ - ĐIỆN LẠNH";
+            this.bt_dientu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_dientu.UseVisualStyleBackColor = true;
+            this.bt_dientu.Click += new System.EventHandler(this.bt_dientu_Click);
             // 
-            // iconButton1
+            // bt_giadung
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Beige;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(0, 111);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(200, 55);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "ĐỒ GIA DỤNG";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.bt_giadung.FlatAppearance.BorderSize = 0;
+            this.bt_giadung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_giadung.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_giadung.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_giadung.IconColor = System.Drawing.Color.Beige;
+            this.bt_giadung.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_giadung.Location = new System.Drawing.Point(0, 111);
+            this.bt_giadung.Name = "bt_giadung";
+            this.bt_giadung.Padding = new System.Windows.Forms.Padding(18, 0, 0, 0);
+            this.bt_giadung.Size = new System.Drawing.Size(200, 55);
+            this.bt_giadung.TabIndex = 0;
+            this.bt_giadung.Text = "NHÀ CỬA - ĐỜI SỐNG";
+            this.bt_giadung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_giadung.UseVisualStyleBackColor = true;
+            this.bt_giadung.Click += new System.EventHandler(this.btgiadung_Click);
             // 
             // pictureBox2
             // 
@@ -239,20 +283,6 @@ namespace MUASAM
             this.iconButton_Close.MouseLeave += new System.EventHandler(this.iconButton_Close_MouseLeave);
             this.iconButton_Close.MouseHover += new System.EventHandler(this.iconButton_Close_MouseHover);
             // 
-            // bt_GioHang
-            // 
-            this.bt_GioHang.FlatAppearance.BorderSize = 0;
-            this.bt_GioHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_GioHang.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            this.bt_GioHang.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_GioHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_GioHang.IconSize = 60;
-            this.bt_GioHang.Location = new System.Drawing.Point(57, 521);
-            this.bt_GioHang.Name = "bt_GioHang";
-            this.bt_GioHang.Size = new System.Drawing.Size(75, 69);
-            this.bt_GioHang.TabIndex = 11;
-            this.bt_GioHang.UseVisualStyleBackColor = true;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -289,14 +319,15 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton bt_giadung;
+        private FontAwesome.Sharp.IconButton bt_mypham;
+        private FontAwesome.Sharp.IconButton bt_thoitrangnu;
+        private FontAwesome.Sharp.IconButton bt_thoitrangnam;
+        private FontAwesome.Sharp.IconButton bt_dientu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton bt_GioHang;
+        private FontAwesome.Sharp.IconButton bt_nhasach;
     }
 }
 
