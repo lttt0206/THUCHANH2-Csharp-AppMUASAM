@@ -37,8 +37,13 @@ namespace MUASAM
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.gia = new System.Windows.Forms.Label();
+            this.tensp = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,11 +123,44 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.gia);
+            this.panelDesktop.Controls.Add(this.tensp);
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Location = new System.Drawing.Point(0, 22);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(984, 619);
             this.panelDesktop.TabIndex = 9;
+            // 
+            // gia
+            // 
+            this.gia.AutoSize = true;
+            this.gia.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.gia.Location = new System.Drawing.Point(415, 104);
+            this.gia.Name = "gia";
+            this.gia.Size = new System.Drawing.Size(144, 31);
+            this.gia.TabIndex = 2;
+            this.gia.Text = "100.000 VNĐ";
+            // 
+            // tensp
+            // 
+            this.tensp.AutoSize = true;
+            this.tensp.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tensp.Location = new System.Drawing.Point(415, 42);
+            this.tensp.Name = "tensp";
+            this.tensp.Size = new System.Drawing.Size(160, 31);
+            this.tensp.TabIndex = 1;
+            this.tensp.Text = "Tên sản phẩm";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(46, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(354, 359);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // CTSanPham
             // 
@@ -146,6 +184,9 @@ namespace MUASAM
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,6 +198,9 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label gia;
+        private System.Windows.Forms.Label tensp;
     }
 }
 
