@@ -22,7 +22,7 @@ namespace MUASAM
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn.Size = new Size(7, 55);
             panelMenu.Controls.Add(leftBorderBtn);
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -77,8 +77,8 @@ namespace MUASAM
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            /*panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;*/
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -140,6 +140,7 @@ namespace MUASAM
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Giadung());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

@@ -63,9 +63,49 @@ namespace MUASAM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_for_sales_company_and_bag_or_e_commerce {
+            get {
+                object obj = ResourceManager.GetObject("logo for sales company and bag or e-commerce", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_for_sales_company_and_bag_or_e_commerce__1_ {
+            get {
+                object obj = ResourceManager.GetObject("logo for sales company and bag or e-commerce (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_for_sales_company_and_bag_or_e_commerce1 {
+            get {
+                object obj = ResourceManager.GetObject("logo for sales company and bag or e-commerce1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Surrender {
             get {
                 object obj = ResourceManager.GetObject("Surrender", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Surrender__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Surrender (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
