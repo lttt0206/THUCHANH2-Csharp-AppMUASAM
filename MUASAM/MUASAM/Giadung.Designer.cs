@@ -83,72 +83,72 @@ namespace MUASAM
             this.panel_main.Controls.Add(this.panel1);
             this.panel_main.Location = new System.Drawing.Point(0, 58);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(758, 538);
+            this.panel_main.Size = new System.Drawing.Size(780, 560);
             this.panel_main.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(7, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 255);
+            this.panel1.Size = new System.Drawing.Size(174, 265);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(195, 3);
+            this.panel2.Location = new System.Drawing.Point(204, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(174, 255);
+            this.panel2.Size = new System.Drawing.Size(174, 265);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(388, 3);
+            this.panel3.Location = new System.Drawing.Point(401, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(174, 255);
+            this.panel3.Size = new System.Drawing.Size(174, 265);
             this.panel3.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(3, 271);
+            this.panel5.Location = new System.Drawing.Point(3, 287);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(174, 255);
+            this.panel5.Size = new System.Drawing.Size(174, 265);
             this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(581, 3);
+            this.panel4.Location = new System.Drawing.Point(597, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(174, 255);
+            this.panel4.Size = new System.Drawing.Size(174, 265);
             this.panel4.TabIndex = 2;
             // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(195, 271);
+            this.panel6.Location = new System.Drawing.Point(204, 287);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(174, 255);
+            this.panel6.Size = new System.Drawing.Size(174, 265);
             this.panel6.TabIndex = 2;
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(388, 271);
+            this.panel7.Location = new System.Drawing.Point(401, 287);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(174, 255);
+            this.panel7.Size = new System.Drawing.Size(174, 265);
             this.panel7.TabIndex = 2;
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(581, 271);
+            this.panel8.Location = new System.Drawing.Point(597, 287);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(174, 255);
+            this.panel8.Size = new System.Drawing.Size(174, 265);
             this.panel8.TabIndex = 2;
             // 
             // pictureBox1
@@ -165,7 +165,7 @@ namespace MUASAM
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(758, 619);
+            this.ClientSize = new System.Drawing.Size(784, 619);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.label_head);
             this.Cursor = System.Windows.Forms.Cursors.Default;

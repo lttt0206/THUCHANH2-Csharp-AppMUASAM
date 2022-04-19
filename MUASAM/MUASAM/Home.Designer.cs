@@ -92,10 +92,10 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelDesktop.Location = new System.Drawing.Point(206, 22);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelDesktop.Location = new System.Drawing.Point(200, 22);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(778, 619);
+            this.panelDesktop.Size = new System.Drawing.Size(784, 619);
             this.panelDesktop.TabIndex = 9;
             // 
             // pictureBox1
