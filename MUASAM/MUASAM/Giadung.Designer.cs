@@ -171,12 +171,13 @@ namespace MUASAM
             // 
             this.giasp1.AutoSize = true;
             this.giasp1.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giasp1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.giasp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.giasp1.Location = new System.Drawing.Point(5, 212);
             this.giasp1.Name = "giasp1";
             this.giasp1.Size = new System.Drawing.Size(47, 22);
             this.giasp1.TabIndex = 2;
             this.giasp1.Text = "giasp";
+            this.giasp1.Click += new System.EventHandler(this.giasp1_Click);
             // 
             // daban1
             // 
@@ -239,7 +240,7 @@ namespace MUASAM
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(5, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 22);
@@ -296,7 +297,7 @@ namespace MUASAM
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label8.Location = new System.Drawing.Point(5, 212);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 22);
@@ -353,7 +354,7 @@ namespace MUASAM
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label12.Location = new System.Drawing.Point(5, 212);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 22);
@@ -410,12 +411,12 @@ namespace MUASAM
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label16.Location = new System.Drawing.Point(5, 212);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 22);
+            this.label16.Size = new System.Drawing.Size(100, 22);
             this.label16.TabIndex = 2;
-            this.label16.Text = "label16";
+            this.label16.Text = "100.000VNĐ";
             // 
             // tensp5
             // 
@@ -467,7 +468,7 @@ namespace MUASAM
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label20.Location = new System.Drawing.Point(5, 212);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(63, 22);
@@ -524,7 +525,7 @@ namespace MUASAM
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label24.Location = new System.Drawing.Point(5, 212);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(63, 22);
@@ -581,7 +582,7 @@ namespace MUASAM
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.label28.Location = new System.Drawing.Point(5, 212);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(63, 22);

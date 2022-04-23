@@ -14,6 +14,7 @@ namespace MUASAM
         public int gia { get; set; }
         public int soluong { get; set; }
         public int daban { get; set; }
+        public int luotxem { get; set; }
         public string mota { get; set; }
 
     }

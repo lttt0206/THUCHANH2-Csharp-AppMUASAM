@@ -50,5 +50,10 @@ namespace MUASAM
         {
 
         }
+
+        private void giasp1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
