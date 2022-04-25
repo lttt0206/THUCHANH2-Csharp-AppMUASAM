@@ -46,6 +46,8 @@ namespace MUASAM
             this.tensp = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tinhtrang = new System.Windows.Forms.Label();
+            this.bt_themyt = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelDesktop.SuspendLayout();
@@ -129,6 +131,7 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.tinhtrang);
             this.panelDesktop.Controls.Add(this.bt_addgiohang);
             this.panelDesktop.Controls.Add(this.masp);
             this.panelDesktop.Controls.Add(this.icon_search);
@@ -138,6 +141,7 @@ namespace MUASAM
             this.panelDesktop.Controls.Add(this.tensp);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Controls.Add(this.panel2);
+            this.panelDesktop.Controls.Add(this.bt_themyt);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Location = new System.Drawing.Point(0, 22);
             this.panelDesktop.Name = "panelDesktop";
@@ -165,7 +169,7 @@ namespace MUASAM
             // masp
             // 
             this.masp.AutoSize = true;
-            this.masp.Location = new System.Drawing.Point(931, 165);
+            this.masp.Location = new System.Drawing.Point(598, 291);
             this.masp.Name = "masp";
             this.masp.Size = new System.Drawing.Size(41, 13);
             this.masp.TabIndex = 17;
@@ -253,6 +257,36 @@ namespace MUASAM
             this.panel2.Size = new System.Drawing.Size(450, 450);
             this.panel2.TabIndex = 16;
             // 
+            // tinhtrang
+            // 
+            this.tinhtrang.AutoSize = true;
+            this.tinhtrang.Font = new System.Drawing.Font("Open Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tinhtrang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tinhtrang.Location = new System.Drawing.Point(739, 158);
+            this.tinhtrang.Name = "tinhtrang";
+            this.tinhtrang.Size = new System.Drawing.Size(103, 23);
+            this.tinhtrang.TabIndex = 19;
+            this.tinhtrang.Text = "Tình trạng:";
+            this.tinhtrang.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // bt_themyt
+            // 
+            this.bt_themyt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.bt_themyt.FlatAppearance.BorderSize = 0;
+            this.bt_themyt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_themyt.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_themyt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_themyt.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_themyt.IconColor = System.Drawing.Color.Black;
+            this.bt_themyt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_themyt.Location = new System.Drawing.Point(511, 210);
+            this.bt_themyt.Name = "bt_themyt";
+            this.bt_themyt.Size = new System.Drawing.Size(396, 54);
+            this.bt_themyt.TabIndex = 20;
+            this.bt_themyt.Text = "THÊM VÀO YÊU THÍCH";
+            this.bt_themyt.UseVisualStyleBackColor = false;
+            this.bt_themyt.Click += new System.EventHandler(this.bt_themyt_Click);
+            // 
             // CTSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -298,6 +332,8 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label masp;
         private FontAwesome.Sharp.IconButton bt_addgiohang;
+        private System.Windows.Forms.Label tinhtrang;
+        private FontAwesome.Sharp.IconButton bt_themyt;
     }
 }
 

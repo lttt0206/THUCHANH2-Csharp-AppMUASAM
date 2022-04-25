@@ -133,7 +133,7 @@ namespace MUASAM
         private void btgiadung_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Giadung());
+            OpenChildForm(new GiadungDS());
         }
 
         private void bt_dientu_Click(object sender, EventArgs e)
@@ -145,21 +145,25 @@ namespace MUASAM
         private void bt_thoitrangnam_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new Thoitrangnam());
         }
 
         private void bt_thoitrangnu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new Thoitrangnu());
         }
 
         private void bt_mypham_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Mypham());
         }
 
         private void bt_nhasach_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new Nhasach());
         }
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
@@ -179,6 +183,12 @@ namespace MUASAM
         private void text_search_Enter(object sender, EventArgs e)
         {
             text_search.Text = "";
+        }
+
+        private void bt_barcode_Click(object sender, EventArgs e)
+        {
+            bt_barcode.BackColor = Color.FromArgb(24, 161, 251);
+            OpenChildForm(new Barcode());
         }
     }
 }

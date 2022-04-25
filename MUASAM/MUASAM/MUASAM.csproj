@@ -77,6 +77,42 @@
     <Compile Include="Daxem.cs" />
     <Compile Include="DBSQLServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
+    <Compile Include="Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode.Designer.cs">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhasach.Designer.cs">
+      <DependentUpon>Nhasach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mypham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mypham.Designer.cs">
+      <DependentUpon>Mypham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thoitrangnu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thoitrangnu.Designer.cs">
+      <DependentUpon>Thoitrangnu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thoitrangnam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thoitrangnam.Designer.cs">
+      <DependentUpon>Thoitrangnam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiadungDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiadungDS.Designer.cs">
+      <DependentUpon>GiadungDS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donhang.cs" />
     <Compile Include="Dientu.cs">
       <SubType>Form</SubType>
@@ -121,6 +157,24 @@
     <Compile Include="Sanpham.cs" />
     <Compile Include="Xuly_Data.cs" />
     <Compile Include="Yeuthich.cs" />
+    <EmbeddedResource Include="Barcode.resx">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhasach.resx">
+      <DependentUpon>Nhasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mypham.resx">
+      <DependentUpon>Mypham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thoitrangnu.resx">
+      <DependentUpon>Thoitrangnu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thoitrangnam.resx">
+      <DependentUpon>Thoitrangnam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiadungDS.resx">
+      <DependentUpon>GiadungDS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dientu.resx">
       <DependentUpon>Dientu.cs</DependentUpon>
     </EmbeddedResource>

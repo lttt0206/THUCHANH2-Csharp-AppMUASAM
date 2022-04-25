@@ -51,6 +51,8 @@ namespace MUASAM
                 h.tensanpham = reader["tensanpham"].ToString();
                 h.gia = Convert.ToInt32(reader["gia"]);
                 h.daban = Convert.ToInt32(reader["daban"]);
+                h.soluong = Convert.ToInt32(reader["soluong"]);
+                h.luotxem = Convert.ToInt32(reader["luotxem"]);
                 h.mota = reader["mota"].ToString();
 
                 reader.Close();
@@ -138,5 +140,46 @@ namespace MUASAM
             conn.Close();
             return tmp2;
         }
+
+        public void themdaxem(string id)
+        {
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            int id_tmp = 0;
+            string query = "select * from Daxem where idsanpham = " + id;
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    id_tmp = Convert.ToInt32(reader["idsanpham"]);
+                }
+            }
+            if (id_tmp != 0)
+            {
+                string query1 = "delete from Daxem where idsanpham=@id";
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                cmd1.Parameters.AddWithValue("id", id);
+                var tmp1 = cmd1.ExecuteNonQuery();
+            }
+            string query2 = "insert into Daxem values (@id)";
+            SqlCommand cmd2 = new SqlCommand(query2, conn);
+            cmd2.Parameters.AddWithValue("id", id);
+            var tmp2 = cmd2.ExecuteNonQuery();
+            conn.Close();
+        }
+        public void tangluotxem(string id, int luotthich)
+        {
+            luotthich += 1;
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "update Sanpham set luotxem=@sl where idsanpham=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("sl", luotthich);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
     }
 }

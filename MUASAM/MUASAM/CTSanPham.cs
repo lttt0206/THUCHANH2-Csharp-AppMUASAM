@@ -62,12 +62,25 @@ namespace MUASAM
         private void CTSanPham_Load(object sender, EventArgs e)
         {
             Xuly_Data s = new Xuly_Data();
+            s.themdaxem(strNhan);
             Sanpham sp = new Sanpham();
             sp = s.getSP(strNhan);
+            s.tangluotxem(strNhan, sp.luotxem);
             tensp.Text = sp.tensanpham;
             masp.Text = sp.idsanpham.ToString();
             masp.Hide();
             gia.Text = sp.gia.ToString("#,##0") + " VNĐ";
+            if (sp.soluong == 0)
+            {
+                tinhtrang.Text = "Tình trạng: Hết hàng";
+                bt_addgiohang.Hide();
+                bt_themyt.BringToFront();
+                icon_search.Hide();
+            }
+            else
+            {
+                tinhtrang.Text = "Tình trạng: Còn " + sp.soluong + " sản phẩm";
+            }            
             mota.Text = sp.mota;
             string st = s.getlinkHA(sp.idsanpham);
             st = st.Substring(1);
@@ -104,6 +117,22 @@ namespace MUASAM
         private void icon_search_MouseLeave(object sender, EventArgs e)
         {
             icon_search.IconFont = IconFont.Regular;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_themyt_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.themyeuthich(masp.Text);
+            if (tmp == 1) Console.WriteLine("Thanh Cong");
+            else Console.WriteLine("SAI!!!!");
+            Notification ct = new Notification();
+            ct.Message = "Đã thêm vào yêu thích";
+            ct.Show();
         }
     }
 }

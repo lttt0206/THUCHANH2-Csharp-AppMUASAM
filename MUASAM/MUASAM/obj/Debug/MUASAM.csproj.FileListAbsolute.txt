@@ -28,3 +28,9 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Xemthem.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Notification.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Dientu.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.GiadungDS.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Nhasach.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Mypham.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Thoitrangnu.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Thoitrangnam.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Barcode.resources

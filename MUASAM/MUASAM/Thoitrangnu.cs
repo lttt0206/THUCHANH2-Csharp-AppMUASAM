@@ -12,17 +12,17 @@ using FontAwesome.Sharp;
 
 namespace MUASAM
 {
-    public partial class Dientu : KryptonForm
+    public partial class Thoitrangnu : KryptonForm
     {
-        public Dientu()
+        public Thoitrangnu()
         {
             InitializeComponent();
             Xuly_Data s = new Xuly_Data();
-            List<Sanpham> list = s.sqlGetSanpham("Dientu");
+            List<Sanpham> list = s.sqlGetSanpham("Thoitrangnu");
             panel2.Size = new Size(758, 564);
             Xemthem ct = new Xemthem();
             int i = 1;
-            ct.Message = "Dientu-" + i;
+            ct.Message = "Thoitrangnu-" + i;
             i += 8;
             ct.TopLevel = false;
             ct.FormBorderStyle = FormBorderStyle.None;
@@ -54,7 +54,7 @@ namespace MUASAM
                 tmp += 570;
                 tmp2 += 8;
                 Xemthem ct2 = new Xemthem();
-                ct2.Message = "Dientu-" + i;
+                ct2.Message = "Thoitrangnu-" + i;
                 ct2.TopLevel = false;
                 ct2.FormBorderStyle = FormBorderStyle.None;
                 ct2.Dock = DockStyle.Fill;
@@ -69,7 +69,7 @@ namespace MUASAM
                     tmp += 570;
                     tmp2 += 8;
                     Xemthem ct3 = new Xemthem();
-                    ct3.Message = "Dientu- " + i;
+                    ct3.Message = "Thoitrangnu- " + i;
                     i += 8;
                     ct3.TopLevel = false;
                     ct3.FormBorderStyle = FormBorderStyle.None;
@@ -85,7 +85,7 @@ namespace MUASAM
                         tmp += 570;
                         tmp2 += 8;
                         Xemthem ct4 = new Xemthem();
-                        ct4.Message = "Dientu-" + i;
+                        ct4.Message = "Thoitrangnu-" + i;
                         i += 8;
                         ct4.TopLevel = false;
                         ct4.FormBorderStyle = FormBorderStyle.None;
@@ -101,7 +101,7 @@ namespace MUASAM
                             tmp += 570;
                             tmp2 += 8;
                             Xemthem ct5 = new Xemthem();
-                            ct5.Message = "Dientu-" + i;
+                            ct5.Message = "Thoitrangnu-" + i;
                             i += 8;
                             ct5.TopLevel = false;
                             ct5.FormBorderStyle = FormBorderStyle.None;
@@ -117,7 +117,7 @@ namespace MUASAM
                                 tmp += 570;
                                 tmp2 += 8;
                                 Xemthem ct6 = new Xemthem();
-                                ct6.Message = "Dientu-" + i;
+                                ct6.Message = "Thoitrangnu-" + i;
                                 i += 8;
                                 ct6.TopLevel = false;
                                 ct6.FormBorderStyle = FormBorderStyle.None;
@@ -133,7 +133,7 @@ namespace MUASAM
                                     tmp += 570;
                                     tmp2 += 8;
                                     Xemthem ct7 = new Xemthem();
-                                    ct7.Message = "Dientu-" + i;
+                                    ct7.Message = "Thoitrangnu-" + i;
                                     i += 8;
                                     ct7.TopLevel = false;
                                     ct7.FormBorderStyle = FormBorderStyle.None;
@@ -149,7 +149,7 @@ namespace MUASAM
                                         tmp += 570;
                                         tmp2 += 8;
                                         Xemthem ct8 = new Xemthem();
-                                        ct8.Message = "Dientu-" + i;
+                                        ct8.Message = "Thoitrangnu-" + i;
                                         i += 8;
                                         ct8.TopLevel = false;
                                         ct8.FormBorderStyle = FormBorderStyle.None;
@@ -165,7 +165,7 @@ namespace MUASAM
                                             tmp += 570;
                                             tmp2 += 8;
                                             Xemthem ct9 = new Xemthem();
-                                            ct9.Message = "Dientu-" + i;
+                                            ct9.Message = "Thoitrangnu-" + i;
                                             i += 8;
                                             ct9.TopLevel = false;
                                             ct9.FormBorderStyle = FormBorderStyle.None;
@@ -181,7 +181,7 @@ namespace MUASAM
                                                 tmp += 570;
                                                 tmp2 += 8;
                                                 Xemthem ct10 = new Xemthem();
-                                                ct10.Message = "Dientu-" + i;
+                                                ct10.Message = "Thoitrangnu-" + i;
                                                 i += 8;
                                                 ct10.TopLevel = false;
                                                 ct10.FormBorderStyle = FormBorderStyle.None;
@@ -197,7 +197,7 @@ namespace MUASAM
                                                     tmp += 570;
                                                     tmp2 += 8;
                                                     Xemthem ct11 = new Xemthem();
-                                                    ct11.Message = "Dientu-" + i;
+                                                    ct11.Message = "Thoitrangnu-" + i;
                                                     i += 8;
                                                     ct11.TopLevel = false;
                                                     ct11.FormBorderStyle = FormBorderStyle.None;
@@ -213,7 +213,7 @@ namespace MUASAM
                                                         tmp += 570;
                                                         tmp2 += 8;
                                                         Xemthem ct12 = new Xemthem();
-                                                        ct12.Message = "Dientu-" + i;
+                                                        ct12.Message = "Thoitrangnu-" + i;
                                                         i += 8;
                                                         ct12.TopLevel = false;
                                                         ct12.FormBorderStyle = FormBorderStyle.None;
@@ -229,7 +229,7 @@ namespace MUASAM
                                                             tmp += 570;
                                                             tmp2 += 8;
                                                             Xemthem ct13 = new Xemthem();
-                                                            ct5.Message = "Dientu-" + i;
+                                                            ct5.Message = "Thoitrangnu-" + i;
                                                             i += 8;
                                                             ct13.TopLevel = false;
                                                             ct13.FormBorderStyle = FormBorderStyle.None;
@@ -245,7 +245,7 @@ namespace MUASAM
                                                                 tmp += 570;
                                                                 tmp2 += 8;
                                                                 Xemthem ct14 = new Xemthem();
-                                                                ct14.Message = "Dientu-" + i;
+                                                                ct14.Message = "Thoitrangnu-" + i;
                                                                 i += 8;
                                                                 ct14.TopLevel = false;
                                                                 ct14.FormBorderStyle = FormBorderStyle.None;
@@ -261,7 +261,7 @@ namespace MUASAM
                                                                     tmp += 570;
                                                                     tmp2 += 8;
                                                                     Xemthem ct15 = new Xemthem();
-                                                                    ct15.Message = "Dientu-" + i;
+                                                                    ct15.Message = "Thoitrangnu-" + i;
                                                                     i += 8;
                                                                     ct15.TopLevel = false;
                                                                     ct15.FormBorderStyle = FormBorderStyle.None;

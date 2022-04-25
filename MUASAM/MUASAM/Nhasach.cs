@@ -12,9 +12,9 @@ using FontAwesome.Sharp;
 
 namespace MUASAM
 {
-    public partial class Dientu : KryptonForm
+    public partial class Nhasach : KryptonForm
     {
-        public Dientu()
+        public Nhasach()
         {
             InitializeComponent();
             Xuly_Data s = new Xuly_Data();

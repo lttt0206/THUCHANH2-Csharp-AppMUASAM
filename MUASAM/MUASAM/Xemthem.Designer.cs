@@ -34,16 +34,9 @@ namespace MUASAM
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.ma8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.daban8 = new System.Windows.Forms.Label();
             this.giasp8 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.tensp8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -95,10 +88,9 @@ namespace MUASAM
             this.giasp1 = new System.Windows.Forms.Label();
             this.tensp1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ma8 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -147,93 +139,17 @@ namespace MUASAM
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.ma8);
             this.panel8.Controls.Add(this.label26);
-            this.panel8.Controls.Add(this.label27);
-            this.panel8.Controls.Add(this.label28);
+            this.panel8.Controls.Add(this.daban8);
+            this.panel8.Controls.Add(this.giasp8);
             this.panel8.Controls.Add(this.tensp8);
             this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Location = new System.Drawing.Point(570, 287);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(174, 265);
             this.panel8.TabIndex = 6;
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.ma8);
-            this.panel9.Controls.Add(this.label5);
-            this.panel9.Controls.Add(this.daban8);
-            this.panel9.Controls.Add(this.giasp8);
-            this.panel9.Controls.Add(this.label17);
-            this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Location = new System.Drawing.Point(-1, -1);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(174, 265);
-            this.panel9.TabIndex = 7;
-            // 
-            // ma8
-            // 
-            this.ma8.AutoSize = true;
-            this.ma8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma8.Location = new System.Drawing.Point(118, 187);
-            this.ma8.Name = "ma8";
-            this.ma8.Size = new System.Drawing.Size(51, 22);
-            this.ma8.TabIndex = 6;
-            this.ma8.Text = "tensp";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Open Sans SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(10, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Đã bán";
-            // 
-            // daban8
-            // 
-            this.daban8.AutoSize = true;
-            this.daban8.Font = new System.Drawing.Font("Open Sans SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.daban8.ForeColor = System.Drawing.Color.DimGray;
-            this.daban8.Location = new System.Drawing.Point(56, 239);
-            this.daban8.Name = "daban8";
-            this.daban8.Size = new System.Drawing.Size(22, 17);
-            this.daban8.TabIndex = 3;
-            this.daban8.Text = "01";
-            // 
-            // giasp8
-            // 
-            this.giasp8.AutoSize = true;
-            this.giasp8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giasp8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.giasp8.Location = new System.Drawing.Point(5, 212);
-            this.giasp8.Name = "giasp8";
-            this.giasp8.Size = new System.Drawing.Size(63, 22);
-            this.giasp8.TabIndex = 2;
-            this.giasp8.Text = "label13";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(5, 190);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(63, 22);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "label29";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(165, 181);
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // label26
             // 
@@ -245,28 +161,31 @@ namespace MUASAM
             this.label26.Size = new System.Drawing.Size(49, 17);
             this.label26.TabIndex = 5;
             this.label26.Text = "Đã bán";
+            this.label26.Click += new System.EventHandler(this.panel8_Click);
             // 
-            // label27
+            // daban8
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Open Sans SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label27.ForeColor = System.Drawing.Color.DimGray;
-            this.label27.Location = new System.Drawing.Point(56, 239);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(22, 17);
-            this.label27.TabIndex = 3;
-            this.label27.Text = "01";
+            this.daban8.AutoSize = true;
+            this.daban8.Font = new System.Drawing.Font("Open Sans SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.daban8.ForeColor = System.Drawing.Color.DimGray;
+            this.daban8.Location = new System.Drawing.Point(56, 239);
+            this.daban8.Name = "daban8";
+            this.daban8.Size = new System.Drawing.Size(22, 17);
+            this.daban8.TabIndex = 3;
+            this.daban8.Text = "01";
+            this.daban8.Click += new System.EventHandler(this.panel8_Click);
             // 
-            // label28
+            // giasp8
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label28.Location = new System.Drawing.Point(5, 212);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(63, 22);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "label28";
+            this.giasp8.AutoSize = true;
+            this.giasp8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giasp8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.giasp8.Location = new System.Drawing.Point(5, 212);
+            this.giasp8.Name = "giasp8";
+            this.giasp8.Size = new System.Drawing.Size(63, 22);
+            this.giasp8.TabIndex = 2;
+            this.giasp8.Text = "label28";
+            this.giasp8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // tensp8
             // 
@@ -278,6 +197,7 @@ namespace MUASAM
             this.tensp8.Size = new System.Drawing.Size(63, 22);
             this.tensp8.TabIndex = 1;
             this.tensp8.Text = "label29";
+            this.tensp8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // pictureBox8
             // 
@@ -286,6 +206,7 @@ namespace MUASAM
             this.pictureBox8.Size = new System.Drawing.Size(165, 181);
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // panel7
             // 
@@ -300,6 +221,7 @@ namespace MUASAM
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(174, 265);
             this.panel7.TabIndex = 6;
+            this.panel7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // ma7
             // 
@@ -311,6 +233,7 @@ namespace MUASAM
             this.ma7.Size = new System.Drawing.Size(51, 22);
             this.ma7.TabIndex = 6;
             this.ma7.Text = "tensp";
+            this.ma7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // label22
             // 
@@ -322,6 +245,7 @@ namespace MUASAM
             this.label22.Size = new System.Drawing.Size(49, 17);
             this.label22.TabIndex = 5;
             this.label22.Text = "Đã bán";
+            this.label22.Click += new System.EventHandler(this.panel7_Click);
             // 
             // daban7
             // 
@@ -333,6 +257,7 @@ namespace MUASAM
             this.daban7.Size = new System.Drawing.Size(22, 17);
             this.daban7.TabIndex = 3;
             this.daban7.Text = "01";
+            this.daban7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // giasp7
             // 
@@ -344,6 +269,7 @@ namespace MUASAM
             this.giasp7.Size = new System.Drawing.Size(63, 22);
             this.giasp7.TabIndex = 2;
             this.giasp7.Text = "label24";
+            this.giasp7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // tensp7
             // 
@@ -355,6 +281,7 @@ namespace MUASAM
             this.tensp7.Size = new System.Drawing.Size(63, 22);
             this.tensp7.TabIndex = 1;
             this.tensp7.Text = "label25";
+            this.tensp7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // pictureBox7
             // 
@@ -363,6 +290,7 @@ namespace MUASAM
             this.pictureBox7.Size = new System.Drawing.Size(165, 181);
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // panel6
             // 
@@ -377,6 +305,7 @@ namespace MUASAM
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(174, 265);
             this.panel6.TabIndex = 6;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // ma6
             // 
@@ -388,6 +317,7 @@ namespace MUASAM
             this.ma6.Size = new System.Drawing.Size(51, 22);
             this.ma6.TabIndex = 6;
             this.ma6.Text = "tensp";
+            this.ma6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // label18
             // 
@@ -399,6 +329,7 @@ namespace MUASAM
             this.label18.Size = new System.Drawing.Size(49, 17);
             this.label18.TabIndex = 5;
             this.label18.Text = "Đã bán";
+            this.label18.Click += new System.EventHandler(this.panel6_Click);
             // 
             // daban6
             // 
@@ -410,6 +341,7 @@ namespace MUASAM
             this.daban6.Size = new System.Drawing.Size(22, 17);
             this.daban6.TabIndex = 3;
             this.daban6.Text = "01";
+            this.daban6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // giasp6
             // 
@@ -421,6 +353,7 @@ namespace MUASAM
             this.giasp6.Size = new System.Drawing.Size(63, 22);
             this.giasp6.TabIndex = 2;
             this.giasp6.Text = "label20";
+            this.giasp6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // tensp6
             // 
@@ -432,6 +365,7 @@ namespace MUASAM
             this.tensp6.Size = new System.Drawing.Size(63, 22);
             this.tensp6.TabIndex = 1;
             this.tensp6.Text = "label21";
+            this.tensp6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // pictureBox6
             // 
@@ -440,6 +374,7 @@ namespace MUASAM
             this.pictureBox6.Size = new System.Drawing.Size(165, 181);
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // panel5
             // 
@@ -454,6 +389,7 @@ namespace MUASAM
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(174, 265);
             this.panel5.TabIndex = 6;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // ma5
             // 
@@ -465,6 +401,7 @@ namespace MUASAM
             this.ma5.Size = new System.Drawing.Size(51, 22);
             this.ma5.TabIndex = 6;
             this.ma5.Text = "tensp";
+            this.ma5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // label14
             // 
@@ -476,6 +413,7 @@ namespace MUASAM
             this.label14.Size = new System.Drawing.Size(49, 17);
             this.label14.TabIndex = 5;
             this.label14.Text = "Đã bán";
+            this.label14.Click += new System.EventHandler(this.panel5_Click);
             // 
             // daban5
             // 
@@ -487,6 +425,7 @@ namespace MUASAM
             this.daban5.Size = new System.Drawing.Size(22, 17);
             this.daban5.TabIndex = 3;
             this.daban5.Text = "01";
+            this.daban5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // giasp5
             // 
@@ -498,6 +437,7 @@ namespace MUASAM
             this.giasp5.Size = new System.Drawing.Size(63, 22);
             this.giasp5.TabIndex = 2;
             this.giasp5.Text = "label16";
+            this.giasp5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // tensp5
             // 
@@ -509,6 +449,7 @@ namespace MUASAM
             this.tensp5.Size = new System.Drawing.Size(63, 22);
             this.tensp5.TabIndex = 1;
             this.tensp5.Text = "label17";
+            this.tensp5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // pictureBox5
             // 
@@ -517,6 +458,7 @@ namespace MUASAM
             this.pictureBox5.Size = new System.Drawing.Size(165, 181);
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // panel4
             // 
@@ -531,6 +473,8 @@ namespace MUASAM
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(174, 265);
             this.panel4.TabIndex = 6;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ma4
             // 
@@ -542,6 +486,7 @@ namespace MUASAM
             this.ma4.Size = new System.Drawing.Size(51, 22);
             this.ma4.TabIndex = 6;
             this.ma4.Text = "tensp";
+            this.ma4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // label10
             // 
@@ -553,6 +498,7 @@ namespace MUASAM
             this.label10.Size = new System.Drawing.Size(49, 17);
             this.label10.TabIndex = 5;
             this.label10.Text = "Đã bán";
+            this.label10.Click += new System.EventHandler(this.panel4_Click);
             // 
             // daban4
             // 
@@ -564,6 +510,7 @@ namespace MUASAM
             this.daban4.Size = new System.Drawing.Size(22, 17);
             this.daban4.TabIndex = 3;
             this.daban4.Text = "01";
+            this.daban4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // giasp4
             // 
@@ -575,6 +522,7 @@ namespace MUASAM
             this.giasp4.Size = new System.Drawing.Size(63, 22);
             this.giasp4.TabIndex = 2;
             this.giasp4.Text = "label12";
+            this.giasp4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // tensp4
             // 
@@ -586,6 +534,7 @@ namespace MUASAM
             this.tensp4.Size = new System.Drawing.Size(63, 22);
             this.tensp4.TabIndex = 1;
             this.tensp4.Text = "label13";
+            this.tensp4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // pictureBox4
             // 
@@ -594,6 +543,7 @@ namespace MUASAM
             this.pictureBox4.Size = new System.Drawing.Size(165, 181);
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // panel3
             // 
@@ -608,6 +558,7 @@ namespace MUASAM
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(174, 265);
             this.panel3.TabIndex = 6;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // ma3
             // 
@@ -619,6 +570,7 @@ namespace MUASAM
             this.ma3.Size = new System.Drawing.Size(51, 22);
             this.ma3.TabIndex = 6;
             this.ma3.Text = "tensp";
+            this.ma3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // label6
             // 
@@ -630,6 +582,7 @@ namespace MUASAM
             this.label6.Size = new System.Drawing.Size(49, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Đã bán";
+            this.label6.Click += new System.EventHandler(this.panel3_Click);
             // 
             // daban3
             // 
@@ -641,6 +594,7 @@ namespace MUASAM
             this.daban3.Size = new System.Drawing.Size(22, 17);
             this.daban3.TabIndex = 3;
             this.daban3.Text = "01";
+            this.daban3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // giasp3
             // 
@@ -652,6 +606,7 @@ namespace MUASAM
             this.giasp3.Size = new System.Drawing.Size(54, 22);
             this.giasp3.TabIndex = 2;
             this.giasp3.Text = "label8";
+            this.giasp3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // tensp3
             // 
@@ -663,6 +618,7 @@ namespace MUASAM
             this.tensp3.Size = new System.Drawing.Size(54, 22);
             this.tensp3.TabIndex = 1;
             this.tensp3.Text = "label9";
+            this.tensp3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // pictureBox3
             // 
@@ -671,6 +627,7 @@ namespace MUASAM
             this.pictureBox3.Size = new System.Drawing.Size(165, 181);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // panel2
             // 
@@ -685,6 +642,7 @@ namespace MUASAM
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(174, 265);
             this.panel2.TabIndex = 6;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // ma2
             // 
@@ -696,6 +654,7 @@ namespace MUASAM
             this.ma2.Size = new System.Drawing.Size(51, 22);
             this.ma2.TabIndex = 6;
             this.ma2.Text = "tensp";
+            this.ma2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // label2
             // 
@@ -707,6 +666,7 @@ namespace MUASAM
             this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Đã bán";
+            this.label2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // daban2
             // 
@@ -718,6 +678,7 @@ namespace MUASAM
             this.daban2.Size = new System.Drawing.Size(22, 17);
             this.daban2.TabIndex = 3;
             this.daban2.Text = "01";
+            this.daban2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // giasp2
             // 
@@ -729,6 +690,7 @@ namespace MUASAM
             this.giasp2.Size = new System.Drawing.Size(54, 22);
             this.giasp2.TabIndex = 2;
             this.giasp2.Text = "label4";
+            this.giasp2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // tensp2
             // 
@@ -740,6 +702,7 @@ namespace MUASAM
             this.tensp2.Size = new System.Drawing.Size(54, 22);
             this.tensp2.TabIndex = 1;
             this.tensp2.Text = "label5";
+            this.tensp2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // pictureBox2
             // 
@@ -748,6 +711,7 @@ namespace MUASAM
             this.pictureBox2.Size = new System.Drawing.Size(165, 181);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // panel1
             // 
@@ -762,6 +726,7 @@ namespace MUASAM
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(174, 265);
             this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // ma1
             // 
@@ -784,6 +749,7 @@ namespace MUASAM
             this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Đã bán";
+            this.label1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // daban1
             // 
@@ -795,6 +761,7 @@ namespace MUASAM
             this.daban1.Size = new System.Drawing.Size(22, 17);
             this.daban1.TabIndex = 3;
             this.daban1.Text = "01";
+            this.daban1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // giasp1
             // 
@@ -806,6 +773,7 @@ namespace MUASAM
             this.giasp1.Size = new System.Drawing.Size(47, 22);
             this.giasp1.TabIndex = 2;
             this.giasp1.Text = "giasp";
+            this.giasp1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // tensp1
             // 
@@ -817,6 +785,7 @@ namespace MUASAM
             this.tensp1.Size = new System.Drawing.Size(51, 22);
             this.tensp1.TabIndex = 1;
             this.tensp1.Text = "tensp";
+            this.tensp1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // pictureBox1
             // 
@@ -825,6 +794,19 @@ namespace MUASAM
             this.pictureBox1.Size = new System.Drawing.Size(165, 181);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // ma8
+            // 
+            this.ma8.AutoSize = true;
+            this.ma8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma8.Location = new System.Drawing.Point(118, 187);
+            this.ma8.Name = "ma8";
+            this.ma8.Size = new System.Drawing.Size(51, 22);
+            this.ma8.TabIndex = 7;
+            this.ma8.Text = "tensp";
+            this.ma8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // Xemthem
             // 
@@ -848,9 +830,6 @@ namespace MUASAM
             this.panel_main.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -886,8 +865,8 @@ namespace MUASAM
         private System.Windows.Forms.Label tensp1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label daban8;
+        private System.Windows.Forms.Label giasp8;
         private System.Windows.Forms.Label tensp8;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel7;
@@ -928,13 +907,6 @@ namespace MUASAM
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label daban1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label daban8;
-        private System.Windows.Forms.Label giasp8;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label ma8;
         private System.Windows.Forms.Label ma7;
         private System.Windows.Forms.Label ma6;
         private System.Windows.Forms.Label ma5;
@@ -942,6 +914,7 @@ namespace MUASAM
         private System.Windows.Forms.Label ma3;
         private System.Windows.Forms.Label ma2;
         private System.Windows.Forms.Label ma1;
+        private System.Windows.Forms.Label ma8;
     }
 }
 

@@ -37,55 +37,55 @@ namespace MUASAM
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.text_search = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.ma8 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.ma7 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.ma6 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.ma5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.ma4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ma3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ma2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ma1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.daban1 = new System.Windows.Forms.Label();
             this.giasp1 = new System.Windows.Forms.Label();
             this.tensp1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ma1 = new System.Windows.Forms.Label();
-            this.ma2 = new System.Windows.Forms.Label();
-            this.ma3 = new System.Windows.Forms.Label();
-            this.ma4 = new System.Windows.Forms.Label();
-            this.ma5 = new System.Windows.Forms.Label();
-            this.ma6 = new System.Windows.Forms.Label();
-            this.ma7 = new System.Windows.Forms.Label();
-            this.ma8 = new System.Windows.Forms.Label();
             this.icon_search = new FontAwesome.Sharp.IconButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -95,6 +95,7 @@ namespace MUASAM
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.bt_barcode = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.bt_nhasach = new FontAwesome.Sharp.IconButton();
             this.bt_GioHang = new FontAwesome.Sharp.IconButton();
@@ -156,6 +157,7 @@ namespace MUASAM
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.bt_barcode);
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.bt_nhasach);
             this.panelMenu.Controls.Add(this.bt_GioHang);
@@ -221,6 +223,17 @@ namespace MUASAM
             this.panel9.Size = new System.Drawing.Size(174, 265);
             this.panel9.TabIndex = 6;
             // 
+            // ma8
+            // 
+            this.ma8.AutoSize = true;
+            this.ma8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma8.Location = new System.Drawing.Point(117, 171);
+            this.ma8.Name = "ma8";
+            this.ma8.Size = new System.Drawing.Size(51, 22);
+            this.ma8.TabIndex = 7;
+            this.ma8.Text = "tensp";
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -278,6 +291,17 @@ namespace MUASAM
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(174, 265);
             this.panel8.TabIndex = 6;
+            // 
+            // ma7
+            // 
+            this.ma7.AutoSize = true;
+            this.ma7.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma7.Location = new System.Drawing.Point(118, 171);
+            this.ma7.Name = "ma7";
+            this.ma7.Size = new System.Drawing.Size(51, 22);
+            this.ma7.TabIndex = 7;
+            this.ma7.Text = "tensp";
             // 
             // label24
             // 
@@ -337,6 +361,17 @@ namespace MUASAM
             this.panel7.Size = new System.Drawing.Size(174, 265);
             this.panel7.TabIndex = 6;
             // 
+            // ma6
+            // 
+            this.ma6.AutoSize = true;
+            this.ma6.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma6.Location = new System.Drawing.Point(118, 171);
+            this.ma6.Name = "ma6";
+            this.ma6.Size = new System.Drawing.Size(51, 22);
+            this.ma6.TabIndex = 7;
+            this.ma6.Text = "tensp";
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -394,6 +429,17 @@ namespace MUASAM
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(174, 265);
             this.panel6.TabIndex = 6;
+            // 
+            // ma5
+            // 
+            this.ma5.AutoSize = true;
+            this.ma5.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma5.Location = new System.Drawing.Point(118, 171);
+            this.ma5.Name = "ma5";
+            this.ma5.Size = new System.Drawing.Size(51, 22);
+            this.ma5.TabIndex = 7;
+            this.ma5.Text = "tensp";
             // 
             // label16
             // 
@@ -453,6 +499,17 @@ namespace MUASAM
             this.panel5.Size = new System.Drawing.Size(174, 265);
             this.panel5.TabIndex = 6;
             // 
+            // ma4
+            // 
+            this.ma4.AutoSize = true;
+            this.ma4.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma4.Location = new System.Drawing.Point(117, 171);
+            this.ma4.Name = "ma4";
+            this.ma4.Size = new System.Drawing.Size(51, 22);
+            this.ma4.TabIndex = 7;
+            this.ma4.Text = "tensp";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -510,6 +567,17 @@ namespace MUASAM
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(174, 265);
             this.panel4.TabIndex = 6;
+            // 
+            // ma3
+            // 
+            this.ma3.AutoSize = true;
+            this.ma3.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma3.Location = new System.Drawing.Point(118, 171);
+            this.ma3.Name = "ma3";
+            this.ma3.Size = new System.Drawing.Size(51, 22);
+            this.ma3.TabIndex = 7;
+            this.ma3.Text = "tensp";
             // 
             // label8
             // 
@@ -569,6 +637,17 @@ namespace MUASAM
             this.panel3.Size = new System.Drawing.Size(174, 265);
             this.panel3.TabIndex = 3;
             // 
+            // ma2
+            // 
+            this.ma2.AutoSize = true;
+            this.ma2.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma2.Location = new System.Drawing.Point(118, 171);
+            this.ma2.Name = "ma2";
+            this.ma2.Size = new System.Drawing.Size(51, 22);
+            this.ma2.TabIndex = 7;
+            this.ma2.Text = "tensp";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -626,6 +705,17 @@ namespace MUASAM
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(174, 265);
             this.panel2.TabIndex = 2;
+            // 
+            // ma1
+            // 
+            this.ma1.AutoSize = true;
+            this.ma1.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ma1.Location = new System.Drawing.Point(118, 171);
+            this.ma1.Name = "ma1";
+            this.ma1.Size = new System.Drawing.Size(51, 22);
+            this.ma1.TabIndex = 6;
+            this.ma1.Text = "tensp";
             // 
             // label3
             // 
@@ -692,94 +782,6 @@ namespace MUASAM
             this.label1.Size = new System.Drawing.Size(167, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "TOP BÁN CHẠY";
-            // 
-            // ma1
-            // 
-            this.ma1.AutoSize = true;
-            this.ma1.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma1.Location = new System.Drawing.Point(118, 171);
-            this.ma1.Name = "ma1";
-            this.ma1.Size = new System.Drawing.Size(51, 22);
-            this.ma1.TabIndex = 6;
-            this.ma1.Text = "tensp";
-            // 
-            // ma2
-            // 
-            this.ma2.AutoSize = true;
-            this.ma2.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma2.Location = new System.Drawing.Point(118, 171);
-            this.ma2.Name = "ma2";
-            this.ma2.Size = new System.Drawing.Size(51, 22);
-            this.ma2.TabIndex = 7;
-            this.ma2.Text = "tensp";
-            // 
-            // ma3
-            // 
-            this.ma3.AutoSize = true;
-            this.ma3.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma3.Location = new System.Drawing.Point(118, 171);
-            this.ma3.Name = "ma3";
-            this.ma3.Size = new System.Drawing.Size(51, 22);
-            this.ma3.TabIndex = 7;
-            this.ma3.Text = "tensp";
-            // 
-            // ma4
-            // 
-            this.ma4.AutoSize = true;
-            this.ma4.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma4.Location = new System.Drawing.Point(117, 171);
-            this.ma4.Name = "ma4";
-            this.ma4.Size = new System.Drawing.Size(51, 22);
-            this.ma4.TabIndex = 7;
-            this.ma4.Text = "tensp";
-            // 
-            // ma5
-            // 
-            this.ma5.AutoSize = true;
-            this.ma5.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma5.Location = new System.Drawing.Point(118, 171);
-            this.ma5.Name = "ma5";
-            this.ma5.Size = new System.Drawing.Size(51, 22);
-            this.ma5.TabIndex = 7;
-            this.ma5.Text = "tensp";
-            // 
-            // ma6
-            // 
-            this.ma6.AutoSize = true;
-            this.ma6.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma6.Location = new System.Drawing.Point(118, 171);
-            this.ma6.Name = "ma6";
-            this.ma6.Size = new System.Drawing.Size(51, 22);
-            this.ma6.TabIndex = 7;
-            this.ma6.Text = "tensp";
-            // 
-            // ma7
-            // 
-            this.ma7.AutoSize = true;
-            this.ma7.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma7.Location = new System.Drawing.Point(118, 171);
-            this.ma7.Name = "ma7";
-            this.ma7.Size = new System.Drawing.Size(51, 22);
-            this.ma7.TabIndex = 7;
-            this.ma7.Text = "tensp";
-            // 
-            // ma8
-            // 
-            this.ma8.AutoSize = true;
-            this.ma8.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ma8.Location = new System.Drawing.Point(117, 171);
-            this.ma8.Name = "ma8";
-            this.ma8.Size = new System.Drawing.Size(51, 22);
-            this.ma8.TabIndex = 7;
-            this.ma8.Text = "tensp";
             // 
             // icon_search
             // 
@@ -859,6 +861,23 @@ namespace MUASAM
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // bt_barcode
+            // 
+            this.bt_barcode.FlatAppearance.BorderSize = 0;
+            this.bt_barcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_barcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_barcode.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_barcode.IconChar = FontAwesome.Sharp.IconChar.Barcode;
+            this.bt_barcode.IconColor = System.Drawing.Color.Beige;
+            this.bt_barcode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_barcode.Location = new System.Drawing.Point(0, 487);
+            this.bt_barcode.Name = "bt_barcode";
+            this.bt_barcode.Size = new System.Drawing.Size(200, 40);
+            this.bt_barcode.TabIndex = 14;
+            this.bt_barcode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_barcode.UseVisualStyleBackColor = true;
+            this.bt_barcode.Click += new System.EventHandler(this.bt_barcode_Click);
+            // 
             // iconButton1
             // 
             this.iconButton1.FlatAppearance.BorderSize = 0;
@@ -866,10 +885,10 @@ namespace MUASAM
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton1.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 55;
-            this.iconButton1.Location = new System.Drawing.Point(0, 564);
+            this.iconButton1.IconSize = 40;
+            this.iconButton1.Location = new System.Drawing.Point(0, 576);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(200, 55);
+            this.iconButton1.Size = new System.Drawing.Size(200, 40);
             this.iconButton1.TabIndex = 13;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
@@ -899,10 +918,10 @@ namespace MUASAM
             this.bt_GioHang.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.bt_GioHang.IconColor = System.Drawing.Color.WhiteSmoke;
             this.bt_GioHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_GioHang.IconSize = 55;
-            this.bt_GioHang.Location = new System.Drawing.Point(0, 503);
+            this.bt_GioHang.IconSize = 40;
+            this.bt_GioHang.Location = new System.Drawing.Point(0, 533);
             this.bt_GioHang.Name = "bt_GioHang";
-            this.bt_GioHang.Size = new System.Drawing.Size(200, 55);
+            this.bt_GioHang.Size = new System.Drawing.Size(200, 40);
             this.bt_GioHang.TabIndex = 11;
             this.bt_GioHang.UseVisualStyleBackColor = true;
             // 
@@ -1195,6 +1214,7 @@ namespace MUASAM
         private System.Windows.Forms.Label ma3;
         private System.Windows.Forms.Label ma2;
         private System.Windows.Forms.Label ma1;
+        private FontAwesome.Sharp.IconButton bt_barcode;
     }
 }
 

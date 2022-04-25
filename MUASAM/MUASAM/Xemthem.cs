@@ -39,8 +39,6 @@ namespace MUASAM
         {
             string danhmuc = strNhan.Split('-')[0];
             int tmp = Convert.ToInt32(strNhan.Split('-')[1]);
-            Console.WriteLine(danhmuc);
-            Console.WriteLine(tmp);
 
             Xuly_Data s = new Xuly_Data();
             List<Sanpham> list = s.sqlGetSanpham(danhmuc);
@@ -176,8 +174,8 @@ namespace MUASAM
             {
                 string st = s.getlinkHA(list[i].idsanpham);
                 st = st.Substring(1);
-                pictureBox9.ImageLocation = st;
-                pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox8.ImageLocation = st;
+                pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
                 tensp8.Text = list[i].tensanpham;
                 ma8.Text = list[i].idsanpham.ToString();
                 ma8.Hide();
@@ -188,6 +186,90 @@ namespace MUASAM
             else
             {
                 panel8.Hide();
+            }
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            if (!tensp1.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma1.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            if (!tensp2.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma2.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            if (!tensp3.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma3.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            if (!tensp4.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma4.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            if (!tensp5.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma5.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            if (!tensp6.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma6.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            if (!tensp7.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma7.Text;
+                ct.Show();
+            }
+        }
+
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            if (!tensp8.Text.Equals(""))
+            {
+                CTSanPham ct = new CTSanPham();
+                ct.Message = ma8.Text;
+                ct.Show();
             }
         }
     }
