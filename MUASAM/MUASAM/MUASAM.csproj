@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTDH.cs" />
+    <Compile Include="Dathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dathang.Designer.cs">
+      <DependentUpon>Dathang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Daxem.cs" />
     <Compile Include="DBSQLServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="Barcode.Designer.cs">
       <DependentUpon>Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiohangUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiohangUI.Designer.cs">
+      <DependentUpon>GiohangUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Nhasach.cs">
       <SubType>Form</SubType>
@@ -126,6 +138,12 @@
     <Compile Include="Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
+    <Compile Include="SPgiohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPgiohang.Designer.cs">
+      <DependentUpon>SPgiohang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Xemthem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +178,12 @@
     <EmbeddedResource Include="Barcode.resx">
       <DependentUpon>Barcode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dathang.resx">
+      <DependentUpon>Dathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiohangUI.resx">
+      <DependentUpon>GiohangUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Nhasach.resx">
       <DependentUpon>Nhasach.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPgiohang.resx">
+      <DependentUpon>SPgiohang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Xemthem.resx">
       <DependentUpon>Xemthem.cs</DependentUpon>
