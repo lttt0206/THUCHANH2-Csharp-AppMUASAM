@@ -14,9 +14,7 @@ namespace MUASAM
 {
     public partial class CTSanPham : KryptonForm
     {
-        private IconButton currentBtn;
-        private Form currentChildForm;
-
+        string strNhan;
         public CTSanPham()
         {
             InitializeComponent();
@@ -25,62 +23,12 @@ namespace MUASAM
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-        private void ActivateButton(object senderBtn, Color color)
+        public string Message
         {
-            if (senderBtn != null)
-            {
-                DisableButton();
-                //Button
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
-                currentBtn.Padding= new Padding(0);
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                //Current Child Form Icon
-                /*iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = color;*/
-            }
+            get { return strNhan; }
+            set { strNhan = value; }
         }
 
-        private void DisableButton()
-        {
-            if (currentBtn != null)
-            {
-                currentBtn.BackColor = Color.FromArgb(35, 40, 52);
-                currentBtn.ForeColor = Color.Gainsboro;
-                currentBtn.Padding = new Padding(18,0,0,0);
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                //currentBtn.IconColor = Color.Gainsboro;
-                //currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                //currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }
-        }
-
-        private void OpenChildForm(Form childForm)
-        {            
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-        private struct RGBColors
-        {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
-        }
         private void iconButton_mini_MouseHover(object sender, EventArgs e)
         {
             iconButton_mini.BackColor = Color.FromArgb(189, 23, 70);
@@ -103,18 +51,7 @@ namespace MUASAM
 
         private void iconButton_Close_Click(object sender, EventArgs e)
         {
-            string message = "Bạn có muốn đóng cửa sổ không?";
-            string title = "Close Window";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons);
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                // Do something  
-            }
+            this.Close();
         }
 
         private void iconButton_Close_MouseLeave(object sender, EventArgs e)
@@ -122,10 +59,51 @@ namespace MUASAM
             iconButton_Close.BackColor = Color.FromArgb(35, 40, 52);
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void CTSanPham_Load(object sender, EventArgs e)
         {
-
+            Xuly_Data s = new Xuly_Data();
+            Sanpham sp = new Sanpham();
+            sp = s.getSP(strNhan);
+            tensp.Text = sp.tensanpham;
+            masp.Text = sp.idsanpham.ToString();
+            masp.Hide();
+            gia.Text = sp.gia.ToString("#,##0") + " VNĐ";
+            mota.Text = sp.mota;
+            string st = s.getlinkHA(sp.idsanpham);
+            st = st.Substring(1);
+            pictureBox1.ImageLocation = st;
         }
 
+        private void bt_addgiohang_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.themgiohang(masp.Text);
+            if (tmp == 1) Console.WriteLine("Thanh Cong");
+            else Console.WriteLine("SAI!!!!");
+            Notification ct = new Notification();
+            ct.Message = "Đã thêm vào giỏ hàng";
+            ct.Show();
+        }
+
+        private void icon_search_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.themyeuthich(masp.Text);
+            if (tmp == 1) Console.WriteLine("Thanh Cong");
+            else Console.WriteLine("SAI!!!!");
+            Notification ct = new Notification();
+            ct.Message = "Đã thêm vào yêu thích";
+            ct.Show();
+        }
+
+        private void icon_search_MouseHover(object sender, EventArgs e)
+        {
+            icon_search.IconFont = IconFont.Solid;
+        }
+
+        private void icon_search_MouseLeave(object sender, EventArgs e)
+        {
+            icon_search.IconFont = IconFont.Regular;
+        }
     }
 }

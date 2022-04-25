@@ -74,9 +74,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTDH.cs" />
+    <Compile Include="Daxem.cs" />
     <Compile Include="DBSQLServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
     <Compile Include="Donhang.cs" />
+    <Compile Include="Dientu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dientu.Designer.cs">
+      <DependentUpon>Dientu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Xemthem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +119,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sanpham.cs" />
+    <Compile Include="Xuly_Data.cs" />
+    <Compile Include="Yeuthich.cs" />
+    <EmbeddedResource Include="Dientu.resx">
+      <DependentUpon>Dientu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Xemthem.resx">
       <DependentUpon>Xemthem.cs</DependentUpon>
     </EmbeddedResource>

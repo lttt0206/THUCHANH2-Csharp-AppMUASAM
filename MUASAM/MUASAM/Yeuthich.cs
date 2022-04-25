@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace MUASAM
 {
-    class Giohang
+    class Yeuthich
     {
-        public int idgiohang { get; set; }
         public int idsanpham { get; set; }
-        public int soluong { get; set; }
     }
 }

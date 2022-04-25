@@ -40,17 +40,11 @@ namespace MUASAM
                 currentBtn.ForeColor = color;
                 currentBtn.Padding= new Padding(0);
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-               // currentBtn.IconColor = color;
-                //currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                //currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 //Left border button
                 leftBorderBtn.BackColor = color;
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-                //Current Child Form Icon
-                /*iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = color;*/
             }
         }
 
@@ -62,9 +56,6 @@ namespace MUASAM
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.Padding = new Padding(18,0,0,0);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                //currentBtn.IconColor = Color.Gainsboro;
-                //currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                //currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
 
@@ -148,16 +139,17 @@ namespace MUASAM
         private void bt_dientu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new Dientu());
         }
 
         private void bt_thoitrangnam_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color4);
         }
 
         private void bt_thoitrangnu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
+            ActivateButton(sender, RGBColors.color3);
         }
 
         private void bt_mypham_Click(object sender, EventArgs e)
@@ -173,6 +165,20 @@ namespace MUASAM
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            Invalidate();
+        }
+
+        private void text_search_Enter(object sender, EventArgs e)
+        {
+            text_search.Text = "";
         }
     }
 }

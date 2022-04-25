@@ -10,5 +10,6 @@ namespace MUASAM
     {
         public int idhinhanh { get; set; }
         public int idsanpham { get; set; }
+        public string linkha{ get; set; }
     }
 }

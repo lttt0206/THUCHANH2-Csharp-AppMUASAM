@@ -37,9 +37,15 @@ namespace MUASAM
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.bt_addgiohang = new FontAwesome.Sharp.IconButton();
+            this.masp = new System.Windows.Forms.Label();
+            this.icon_search = new FontAwesome.Sharp.IconButton();
+            this.mota = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.gia = new System.Windows.Forms.Label();
             this.tensp = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelDesktop.SuspendLayout();
@@ -123,21 +129,96 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.bt_addgiohang);
+            this.panelDesktop.Controls.Add(this.masp);
+            this.panelDesktop.Controls.Add(this.icon_search);
+            this.panelDesktop.Controls.Add(this.mota);
+            this.panelDesktop.Controls.Add(this.label1);
             this.panelDesktop.Controls.Add(this.gia);
             this.panelDesktop.Controls.Add(this.tensp);
             this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Controls.Add(this.panel2);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Location = new System.Drawing.Point(0, 22);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(984, 619);
             this.panelDesktop.TabIndex = 9;
             // 
+            // bt_addgiohang
+            // 
+            this.bt_addgiohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(87)))), ((int)(((byte)(25)))));
+            this.bt_addgiohang.FlatAppearance.BorderSize = 0;
+            this.bt_addgiohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_addgiohang.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_addgiohang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_addgiohang.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_addgiohang.IconColor = System.Drawing.Color.Black;
+            this.bt_addgiohang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_addgiohang.Location = new System.Drawing.Point(511, 210);
+            this.bt_addgiohang.Name = "bt_addgiohang";
+            this.bt_addgiohang.Size = new System.Drawing.Size(396, 54);
+            this.bt_addgiohang.TabIndex = 18;
+            this.bt_addgiohang.Text = "THÊM VÀO GIỎ HÀNG";
+            this.bt_addgiohang.UseVisualStyleBackColor = false;
+            this.bt_addgiohang.Click += new System.EventHandler(this.bt_addgiohang_Click);
+            // 
+            // masp
+            // 
+            this.masp.AutoSize = true;
+            this.masp.Location = new System.Drawing.Point(931, 165);
+            this.masp.Name = "masp";
+            this.masp.Size = new System.Drawing.Size(41, 13);
+            this.masp.TabIndex = 17;
+            this.masp.Text = "label2";
+            // 
+            // icon_search
+            // 
+            this.icon_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.icon_search.FlatAppearance.BorderSize = 0;
+            this.icon_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icon_search.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.icon_search.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.icon_search.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.icon_search.IconSize = 30;
+            this.icon_search.Location = new System.Drawing.Point(913, 210);
+            this.icon_search.Name = "icon_search";
+            this.icon_search.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.icon_search.Size = new System.Drawing.Size(54, 54);
+            this.icon_search.TabIndex = 15;
+            this.icon_search.UseVisualStyleBackColor = false;
+            this.icon_search.Click += new System.EventHandler(this.icon_search_Click);
+            this.icon_search.MouseLeave += new System.EventHandler(this.icon_search_MouseLeave);
+            this.icon_search.MouseHover += new System.EventHandler(this.icon_search_MouseHover);
+            // 
+            // mota
+            // 
+            this.mota.AutoSize = true;
+            this.mota.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mota.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.mota.Location = new System.Drawing.Point(507, 315);
+            this.mota.MaximumSize = new System.Drawing.Size(450, 0);
+            this.mota.Name = "mota";
+            this.mota.Size = new System.Drawing.Size(53, 23);
+            this.mota.TabIndex = 5;
+            this.mota.Text = "Mô tả";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(507, 291);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Mô tả";
+            // 
             // gia
             // 
             this.gia.AutoSize = true;
             this.gia.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.gia.Location = new System.Drawing.Point(415, 104);
+            this.gia.Location = new System.Drawing.Point(505, 152);
             this.gia.Name = "gia";
             this.gia.Size = new System.Drawing.Size(144, 31);
             this.gia.TabIndex = 2;
@@ -148,19 +229,29 @@ namespace MUASAM
             this.tensp.AutoSize = true;
             this.tensp.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tensp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tensp.Location = new System.Drawing.Point(415, 42);
+            this.tensp.Location = new System.Drawing.Point(505, 42);
+            this.tensp.MaximumSize = new System.Drawing.Size(450, 0);
             this.tensp.Name = "tensp";
-            this.tensp.Size = new System.Drawing.Size(160, 31);
+            this.tensp.Size = new System.Drawing.Size(443, 93);
             this.tensp.TabIndex = 1;
-            this.tensp.Text = "Tên sản phẩm";
+            this.tensp.Text = "Tên sản phẩm aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(46, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(354, 359);
+            this.pictureBox1.Size = new System.Drawing.Size(425, 425);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(34, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 450);
+            this.panel2.TabIndex = 16;
             // 
             // CTSanPham
             // 
@@ -181,7 +272,7 @@ namespace MUASAM
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Cornsilk;
-            this.Load += new System.EventHandler(this.Home_Load);
+            this.Load += new System.EventHandler(this.CTSanPham_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelDesktop.ResumeLayout(false);
@@ -201,6 +292,12 @@ namespace MUASAM
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label gia;
         private System.Windows.Forms.Label tensp;
+        private System.Windows.Forms.Label mota;
+        private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton icon_search;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label masp;
+        private FontAwesome.Sharp.IconButton bt_addgiohang;
     }
 }
 
