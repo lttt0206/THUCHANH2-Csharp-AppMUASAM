@@ -39,7 +39,7 @@ namespace MUASAM
             this.label3 = new System.Windows.Forms.Label();
             this.txtBarcode = new System.Windows.Forms.TextBox();
             this.bt_addgiohang = new FontAwesome.Sharp.IconButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tongtien = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -52,6 +52,7 @@ namespace MUASAM
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tien = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -82,12 +83,13 @@ namespace MUASAM
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(59)))));
+            this.panel1.Controls.Add(this.tien);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtBarcode);
             this.panel1.Controls.Add(this.bt_addgiohang);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tongtien);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 505);
@@ -161,16 +163,16 @@ namespace MUASAM
             this.bt_addgiohang.UseVisualStyleBackColor = false;
             this.bt_addgiohang.Click += new System.EventHandler(this.bt_addgiohang_Click);
             // 
-            // label2
+            // tongtien
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(146, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 31);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "1000VNĐ ";
+            this.tongtien.AutoSize = true;
+            this.tongtien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.tongtien.Location = new System.Drawing.Point(146, 74);
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Size = new System.Drawing.Size(114, 31);
+            this.tongtien.TabIndex = 4;
+            this.tongtien.Text = "1000VNĐ ";
             // 
             // label1
             // 
@@ -272,6 +274,17 @@ namespace MUASAM
             this.panel3.Size = new System.Drawing.Size(756, 10);
             this.panel3.TabIndex = 1;
             // 
+            // tien
+            // 
+            this.tien.AutoSize = true;
+            this.tien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.tien.Location = new System.Drawing.Point(478, 74);
+            this.tien.Name = "tien";
+            this.tien.Size = new System.Drawing.Size(114, 31);
+            this.tien.TabIndex = 24;
+            this.tien.Text = "1000VNĐ ";
+            // 
             // GiohangUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -306,7 +319,7 @@ namespace MUASAM
         private System.Windows.Forms.Label label_head;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label tongtien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel11;
@@ -323,6 +336,7 @@ namespace MUASAM
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.Label tien;
     }
 }
 

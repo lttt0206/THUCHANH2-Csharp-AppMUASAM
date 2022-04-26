@@ -213,5 +213,66 @@ namespace MUASAM
             conn.Close();
             return tmp;
         }
+        public int themdonhang(string ten, string dc, int tien, int tinhtrang, string ngay, string sdt)
+        {
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "insert into Donhang values (@ten,@dc,@tien,@tinhtrang,@ngay,@sdt)";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("ten", ten);
+            cmd.Parameters.AddWithValue("dc", dc);
+            cmd.Parameters.AddWithValue("tien", tien);
+            cmd.Parameters.AddWithValue("tinhtrang", tinhtrang);
+            cmd.Parameters.AddWithValue("ngay", ngay);
+            cmd.Parameters.AddWithValue("sdt", sdt);
+            var tmp = cmd.ExecuteNonQuery();
+            var tmp2 = 0 ;
+            if (tmp != 0)
+            {
+                var st = "select @@IDENTITY as 'Indentity'";
+                SqlCommand cm = new SqlCommand(st, conn);
+                using (var reader = cm.ExecuteReader())
+                {
+                    while (reader.Read()) tmp2 = Convert.ToInt32(reader["Indentity"]);
+                }
+            }
+            conn.Close();
+            return (Convert.ToInt32(tmp2));
+        }
+        public int themCTDH(int iddh, int idsp, int soluong)
+        {
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "insert into CTDH values (@id,@idsp,@soluong,0)";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", iddh);
+            cmd.Parameters.AddWithValue("idsp", idsp);
+            cmd.Parameters.AddWithValue("soluong", soluong);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+            return tmp;
+        }
+        public void muasanpham(int id, int soluong)
+        {
+            var tmp = getSP(id.ToString()).soluong;
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "update Sanpham set soluong=@sl where idsanpham=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("sl", tmp-soluong);
+            var tmp2 = cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void xoagiohang()
+        {
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "delete Giohang";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }

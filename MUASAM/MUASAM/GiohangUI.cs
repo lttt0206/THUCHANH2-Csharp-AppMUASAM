@@ -40,7 +40,6 @@ namespace MUASAM
             panel11.Hide();
             panel12.Hide();
             int tmp = 466;
-            Console.WriteLine(list.Count);
             if (list.Count >= i)
             {
                 panel4.Show();
@@ -190,14 +189,18 @@ namespace MUASAM
             Sanpham tmpsp = new Sanpham();
             int tmpi = 0;
             int sum = 0;
-            while (list.Count > i)
+            while (list.Count > tmpi)
             {
-                tmpsp=s.getSP()
-                sum
+                tmpsp = s.getSP(list[tmpi].idsanpham.ToString());
+                sum += (tmpsp.gia * list[tmpi].soluong);
+                tmpi++;
             }
+            tien.Text = sum.ToString();
+            tien.Hide();
+            tongtien.Text = sum.ToString("#,##0") + " VNĐ";
         }
 
-               
+
         private void Giadung_Load(object sender, EventArgs e)
         {
 
@@ -211,6 +214,7 @@ namespace MUASAM
         private void bt_addgiohang_Click(object sender, EventArgs e)
         {
             Dathang ct = new Dathang();
+            ct.Message = tien.Text;
             ct.Show();
         }
     }

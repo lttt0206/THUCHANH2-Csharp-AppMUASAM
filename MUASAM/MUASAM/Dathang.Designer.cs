@@ -37,14 +37,14 @@ namespace MUASAM
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtsdt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtdc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtten = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tongtien = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -143,12 +143,12 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(this.textBox3);
+            this.panelDesktop.Controls.Add(this.txtsdt);
             this.panelDesktop.Controls.Add(this.label9);
             this.panelDesktop.Controls.Add(this.label8);
-            this.panelDesktop.Controls.Add(this.textBox2);
+            this.panelDesktop.Controls.Add(this.txtdc);
             this.panelDesktop.Controls.Add(this.label7);
-            this.panelDesktop.Controls.Add(this.textBox1);
+            this.panelDesktop.Controls.Add(this.txtten);
             this.panelDesktop.Controls.Add(this.panel2);
             this.panelDesktop.Controls.Add(this.txt);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -159,12 +159,13 @@ namespace MUASAM
             this.panelDesktop.TabIndex = 9;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
-            // textBox3
+            // txtsdt
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 354);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(458, 40);
-            this.textBox3.TabIndex = 27;
+            this.txtsdt.Font = new System.Drawing.Font("Nunito Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsdt.Location = new System.Drawing.Point(16, 354);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Size = new System.Drawing.Size(458, 29);
+            this.txtsdt.TabIndex = 27;
             // 
             // label9
             // 
@@ -190,12 +191,13 @@ namespace MUASAM
             this.label8.Text = "Lưu ý: Nhập tên người nhận, địa chỉ nhận hàng và số điện thoại người nhận trước k" +
     "hi nhấn nút đặt hàng.";
             // 
-            // textBox2
+            // txtdc
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(458, 40);
-            this.textBox2.TabIndex = 24;
+            this.txtdc.Font = new System.Drawing.Font("Nunito Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdc.Location = new System.Drawing.Point(16, 235);
+            this.txtdc.Name = "txtdc";
+            this.txtdc.Size = new System.Drawing.Size(458, 29);
+            this.txtdc.TabIndex = 24;
             // 
             // label7
             // 
@@ -208,18 +210,19 @@ namespace MUASAM
             this.label7.TabIndex = 23;
             this.label7.Text = "Địa chỉ nhận hàng:";
             // 
-            // textBox1
+            // txtten
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(458, 40);
-            this.textBox1.TabIndex = 22;
+            this.txtten.Font = new System.Drawing.Font("Nunito Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtten.Location = new System.Drawing.Point(16, 115);
+            this.txtten.Name = "txtten";
+            this.txtten.Size = new System.Drawing.Size(458, 29);
+            this.txtten.TabIndex = 22;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.tongtien);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
@@ -232,16 +235,16 @@ namespace MUASAM
             this.panel2.Size = new System.Drawing.Size(470, 601);
             this.panel2.TabIndex = 21;
             // 
-            // label6
+            // tongtien
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(305, 489);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 23);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Tổng thanh toán:";
+            this.tongtien.AutoSize = true;
+            this.tongtien.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tongtien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tongtien.Location = new System.Drawing.Point(305, 489);
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Size = new System.Drawing.Size(150, 23);
+            this.tongtien.TabIndex = 28;
+            this.tongtien.Text = "Tổng thanh toán:";
             // 
             // label5
             // 
@@ -362,6 +365,7 @@ namespace MUASAM
             this.bt_dathang.TabIndex = 20;
             this.bt_dathang.Text = "ĐẶT HÀNG";
             this.bt_dathang.UseVisualStyleBackColor = false;
+            this.bt_dathang.Click += new System.EventHandler(this.bt_dathang_Click);
             // 
             // txt
             // 
@@ -426,13 +430,13 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label tongtien;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtdc;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtten;
+        private System.Windows.Forms.TextBox txtsdt;
         private System.Windows.Forms.Label label9;
     }
 }

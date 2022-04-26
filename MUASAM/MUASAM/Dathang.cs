@@ -143,12 +143,32 @@ namespace MUASAM
 
         private void CTSanPham_Load(object sender, EventArgs e)
         {
-            label6.Text = Convert.ToInt32(strNhan).ToString("#,##0") + " VNĐ";
+            tongtien.Text = Convert.ToInt32(strNhan).ToString("#,##0") + " VNĐ";
         }
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bt_dathang_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.themdonhang(txtten.Text, txtdc.Text, Convert.ToInt32(strNhan), 0, DateTime.Now.ToString("dd/MM/yyyy"), txtsdt.Text);
+            List<Giohang> list = s.sqlGetGiohang();
+            Sanpham tmpsp = new Sanpham();
+            int i = 0;
+            while (list.Count > i)
+            {
+                s.themCTDH(tmp, list[i].idsanpham, list[i].soluong);
+                s.muasanpham(list[i].idsanpham, list[i].soluong);
+                i++;
+            }
+            s.xoagiohang();
+            Notification ct = new Notification();
+            ct.Message = "Đặt hàng thành công";
+            ct.Show();
+            this.Close();
         }
     }
 }

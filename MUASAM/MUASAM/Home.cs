@@ -196,5 +196,26 @@ namespace MUASAM
             bt_GioHang.BackColor = Color.FromArgb(24, 161, 251);
             OpenChildForm(new GiohangUI());
         }
+
+        private void bt_GioHang_Leave(object sender, EventArgs e)
+        {
+            bt_GioHang.BackColor = Color.FromArgb(35, 40, 52);
+        }
+
+        private void bt_barcode_Leave(object sender, EventArgs e)
+        {
+            bt_barcode.BackColor = Color.FromArgb(35, 40, 52);
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.FromArgb(24, 161, 251);
+            OpenChildForm(new Account());
+        }
+
+        private void iconButton1_Leave(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.FromArgb(35, 40, 52);
+        }
     }
 }
