@@ -180,6 +180,27 @@ namespace MUASAM
             var tmp = cmd.ExecuteNonQuery();
             conn.Close();
         }
-
+        public List<Giohang> sqlGetGiohang()
+        {
+            List<Giohang> list = new List<Giohang>();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from Giohang";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list.Add(new Giohang()
+                    {
+                        idsanpham = Convert.ToInt32(reader["idsanpham"]),
+                        soluong = Convert.ToInt32(reader["soluong"])
+                    });
+                }
+                reader.Close();
+            }
+            conn.Close();
+            return list;
+        }
     }
 }

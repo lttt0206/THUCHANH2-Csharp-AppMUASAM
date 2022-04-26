@@ -190,5 +190,11 @@ namespace MUASAM
             bt_barcode.BackColor = Color.FromArgb(24, 161, 251);
             OpenChildForm(new Barcode());
         }
+
+        private void bt_GioHang_Click(object sender, EventArgs e)
+        {
+            bt_GioHang.BackColor = Color.FromArgb(24, 161, 251);
+            OpenChildForm(new GiohangUI());
+        }
     }
 }

@@ -284,7 +284,7 @@ namespace MUASAM
                     }
                 }
 
-            };
+            }
         }
 
         private void Dientu_Load(object sender, EventArgs e)
