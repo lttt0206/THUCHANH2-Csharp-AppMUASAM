@@ -202,5 +202,16 @@ namespace MUASAM
             conn.Close();
             return list;
         }
+        public int xoaspgiohang(string id)
+        {
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "delete Giohang where idsanpham=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+            return tmp;
+        }
     }
 }

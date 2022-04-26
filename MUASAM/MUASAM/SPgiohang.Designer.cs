@@ -33,6 +33,7 @@ namespace MUASAM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SPgiohang));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ma1 = new System.Windows.Forms.Label();
             this.tien1 = new System.Windows.Forms.Label();
             this.soluong1 = new FontAwesome.Sharp.IconButton();
             this.bt_tru1 = new FontAwesome.Sharp.IconButton();
@@ -42,6 +43,7 @@ namespace MUASAM
             this.tensp1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ma2 = new System.Windows.Forms.Label();
             this.tien2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.soluong2 = new FontAwesome.Sharp.IconButton();
@@ -51,6 +53,7 @@ namespace MUASAM
             this.bt_cong2 = new FontAwesome.Sharp.IconButton();
             this.xoa2 = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ma3 = new System.Windows.Forms.Label();
             this.tien3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.soluong3 = new FontAwesome.Sharp.IconButton();
@@ -59,9 +62,6 @@ namespace MUASAM
             this.gia3 = new System.Windows.Forms.Label();
             this.cong3 = new FontAwesome.Sharp.IconButton();
             this.xoa3 = new FontAwesome.Sharp.IconButton();
-            this.ma1 = new System.Windows.Forms.Label();
-            this.ma2 = new System.Windows.Forms.Label();
-            this.ma3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -99,6 +99,17 @@ namespace MUASAM
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(758, 150);
             this.panel1.TabIndex = 0;
+            // 
+            // ma1
+            // 
+            this.ma1.AutoSize = true;
+            this.ma1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ma1.Location = new System.Drawing.Point(263, 107);
+            this.ma1.Name = "ma1";
+            this.ma1.Size = new System.Drawing.Size(144, 31);
+            this.ma1.TabIndex = 24;
+            this.ma1.Text = "100.000 VNĐ";
             // 
             // tien1
             // 
@@ -182,12 +193,13 @@ namespace MUASAM
             this.bt_xoa1.Size = new System.Drawing.Size(101, 45);
             this.bt_xoa1.TabIndex = 19;
             this.bt_xoa1.UseVisualStyleBackColor = false;
+            this.bt_xoa1.Click += new System.EventHandler(this.bt_xoa1_Click);
             // 
             // gia1
             // 
             this.gia1.AutoSize = true;
             this.gia1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gia1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.gia1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gia1.Location = new System.Drawing.Point(596, 9);
             this.gia1.Name = "gia1";
             this.gia1.Size = new System.Drawing.Size(144, 31);
@@ -232,6 +244,17 @@ namespace MUASAM
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(758, 150);
             this.panel2.TabIndex = 1;
+            // 
+            // ma2
+            // 
+            this.ma2.AutoSize = true;
+            this.ma2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ma2.Location = new System.Drawing.Point(263, 107);
+            this.ma2.Name = "ma2";
+            this.ma2.Size = new System.Drawing.Size(144, 31);
+            this.ma2.TabIndex = 25;
+            this.ma2.Text = "100.000 VNĐ";
             // 
             // tien2
             // 
@@ -305,7 +328,7 @@ namespace MUASAM
             // 
             this.gia2.AutoSize = true;
             this.gia2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gia2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.gia2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gia2.Location = new System.Drawing.Point(596, 9);
             this.gia2.Name = "gia2";
             this.gia2.Size = new System.Drawing.Size(144, 31);
@@ -347,6 +370,7 @@ namespace MUASAM
             this.xoa2.Size = new System.Drawing.Size(101, 45);
             this.xoa2.TabIndex = 27;
             this.xoa2.UseVisualStyleBackColor = false;
+            this.xoa2.Click += new System.EventHandler(this.xoa2_Click);
             // 
             // panel3
             // 
@@ -365,6 +389,17 @@ namespace MUASAM
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(758, 150);
             this.panel3.TabIndex = 2;
+            // 
+            // ma3
+            // 
+            this.ma3.AutoSize = true;
+            this.ma3.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ma3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ma3.Location = new System.Drawing.Point(281, 108);
+            this.ma3.Name = "ma3";
+            this.ma3.Size = new System.Drawing.Size(144, 31);
+            this.ma3.TabIndex = 40;
+            this.ma3.Text = "100.000 VNĐ";
             // 
             // tien3
             // 
@@ -438,7 +473,7 @@ namespace MUASAM
             // 
             this.gia3.AutoSize = true;
             this.gia3.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gia3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.gia3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gia3.Location = new System.Drawing.Point(596, 10);
             this.gia3.Name = "gia3";
             this.gia3.Size = new System.Drawing.Size(144, 31);
@@ -480,39 +515,7 @@ namespace MUASAM
             this.xoa3.Size = new System.Drawing.Size(101, 45);
             this.xoa3.TabIndex = 35;
             this.xoa3.UseVisualStyleBackColor = false;
-            // 
-            // ma1
-            // 
-            this.ma1.AutoSize = true;
-            this.ma1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ma1.Location = new System.Drawing.Point(263, 107);
-            this.ma1.Name = "ma1";
-            this.ma1.Size = new System.Drawing.Size(144, 31);
-            this.ma1.TabIndex = 24;
-            this.ma1.Text = "100.000 VNĐ";
-            // 
-            // ma2
-            // 
-            this.ma2.AutoSize = true;
-            this.ma2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ma2.Location = new System.Drawing.Point(263, 107);
-            this.ma2.Name = "ma2";
-            this.ma2.Size = new System.Drawing.Size(144, 31);
-            this.ma2.TabIndex = 25;
-            this.ma2.Text = "100.000 VNĐ";
-            // 
-            // ma3
-            // 
-            this.ma3.AutoSize = true;
-            this.ma3.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ma3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ma3.Location = new System.Drawing.Point(281, 108);
-            this.ma3.Name = "ma3";
-            this.ma3.Size = new System.Drawing.Size(144, 31);
-            this.ma3.TabIndex = 40;
-            this.ma3.Text = "100.000 VNĐ";
+            this.xoa3.Click += new System.EventHandler(this.xoa3_Click);
             // 
             // SPgiohang
             // 

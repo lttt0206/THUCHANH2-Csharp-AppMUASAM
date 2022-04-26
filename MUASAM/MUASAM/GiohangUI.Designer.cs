@@ -159,6 +159,7 @@ namespace MUASAM
             this.bt_addgiohang.TabIndex = 19;
             this.bt_addgiohang.Text = "THANH TOÁN";
             this.bt_addgiohang.UseVisualStyleBackColor = false;
+            this.bt_addgiohang.Click += new System.EventHandler(this.bt_addgiohang_Click);
             // 
             // label2
             // 

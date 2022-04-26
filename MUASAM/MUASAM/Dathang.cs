@@ -22,13 +22,95 @@ namespace MUASAM
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            Xuly_Data s = new Xuly_Data();
+            List<Giohang> list = s.sqlGetGiohang();
+            panel4.Size = new Size(434, 404);
+            SPHoadon ct = new SPHoadon();
+            int i = 1;
+            ct.Message = i.ToString();
+            i += 4;
+            ct.TopLevel = false;
+            ct.FormBorderStyle = FormBorderStyle.None;
+            ct.Dock = DockStyle.Fill;
+            panel4.Controls.Add(ct);
+            ct.BringToFront();
+            ct.Show();
+            panel5.Hide();
+            panel6.Hide();
+            panel7.Hide();
+            panel8.Hide();
+            int tmp = 106;
+            if (list.Count > i)
+            {
+                panel5.Show();
+                panel5.Size = new Size(434, 404);
+                panel5.Location = new Point(3, tmp);
+                tmp += 410;
+                SPHoadon ct2 = new SPHoadon();
+                ct2.Message = i.ToString();
+                ct2.TopLevel = false;
+                ct2.FormBorderStyle = FormBorderStyle.None;
+                ct2.Dock = DockStyle.Fill;
+                panel5.Controls.Add(ct2);
+                ct2.BringToFront();
+                ct2.Show();
+                i += 4;
+                if (list.Count > i)
+                {
+                    panel6.Show();
+                    panel6.Size = new Size(434, 404);
+                    panel6.Location = new Point(3, tmp);
+                    tmp += 410;
+                    SPHoadon ct3 = new SPHoadon();
+                    ct3.Message = i.ToString();
+                    ct3.TopLevel = false;
+                    ct3.FormBorderStyle = FormBorderStyle.None;
+                    ct3.Dock = DockStyle.Fill;
+                    panel6.Controls.Add(ct3);
+                    ct3.BringToFront();
+                    ct3.Show();
+                    i += 4;
+                    if (list.Count > i)
+                    {
+                        panel7.Show();
+                        panel7.Size = new Size(434, 404);
+                        panel7.Location = new Point(3, tmp);
+                        tmp += 410;
+                        SPHoadon ct4 = new SPHoadon();
+                        ct4.Message = i.ToString();
+                        ct4.TopLevel = false;
+                        ct4.FormBorderStyle = FormBorderStyle.None;
+                        ct4.Dock = DockStyle.Fill;
+                        panel7.Controls.Add(ct4);
+                        ct4.BringToFront();
+                        ct4.Show();
+                        i += 4;
+                        if (list.Count > i)
+                        {
+                            panel8.Show();
+                            panel8.Size = new Size(434, 404);
+                            panel8.Location = new Point(3, tmp);
+                            tmp += 410;
+                            SPHoadon ct5 = new SPHoadon();
+                            ct5.Message = i.ToString();
+                            ct5.TopLevel = false;
+                            ct5.FormBorderStyle = FormBorderStyle.None;
+                            ct5.Dock = DockStyle.Fill;
+                            panel8.Controls.Add(ct5);
+                            ct5.BringToFront();
+                            ct5.Show();
+                            i += 4;                            
+                        }
+                    }
+                }
+
+            }
         }
         public string Message
         {
             get { return strNhan; }
             set { strNhan = value; }
         }
-
         private void iconButton_mini_MouseHover(object sender, EventArgs e)
         {
             iconButton_mini.BackColor = Color.FromArgb(189, 23, 70);
@@ -61,78 +143,12 @@ namespace MUASAM
 
         private void CTSanPham_Load(object sender, EventArgs e)
         {
-            Xuly_Data s = new Xuly_Data();
-            s.themdaxem(strNhan);
-            Sanpham sp = new Sanpham();
-            sp = s.getSP(strNhan);
-            s.tangluotxem(strNhan, sp.luotxem);
-            tensp.Text = sp.tensanpham;
-            masp.Text = sp.idsanpham.ToString();
-            masp.Hide();
-            gia.Text = sp.gia.ToString("#,##0") + " VNĐ";
-            if (sp.soluong == 0)
-            {
-                tinhtrang.Text = "Tình trạng: Hết hàng";
-                bt_addgiohang.Hide();
-                bt_themyt.BringToFront();
-                icon_search.Hide();
-            }
-            else
-            {
-                tinhtrang.Text = "Tình trạng: Còn " + sp.soluong + " sản phẩm";
-            }            
-            mota.Text = sp.mota;
-            string st = s.getlinkHA(sp.idsanpham);
-            st = st.Substring(1);
-            pictureBox1.ImageLocation = st;
+            label6.Text = Convert.ToInt32(strNhan).ToString("#,##0") + " VNĐ";
         }
 
-        private void bt_addgiohang_Click(object sender, EventArgs e)
-        {
-            Xuly_Data s = new Xuly_Data();
-            var tmp = s.themgiohang(masp.Text);
-            if (tmp == 1) Console.WriteLine("Thanh Cong");
-            else Console.WriteLine("SAI!!!!");
-            Notification ct = new Notification();
-            ct.Message = "Đã thêm vào giỏ hàng";
-            ct.Show();
-        }
-
-        private void icon_search_Click(object sender, EventArgs e)
-        {
-            Xuly_Data s = new Xuly_Data();
-            var tmp = s.themyeuthich(masp.Text);
-            if (tmp == 1) Console.WriteLine("Thanh Cong");
-            else Console.WriteLine("SAI!!!!");
-            Notification ct = new Notification();
-            ct.Message = "Đã thêm vào yêu thích";
-            ct.Show();
-        }
-
-        private void icon_search_MouseHover(object sender, EventArgs e)
-        {
-            icon_search.IconFont = IconFont.Solid;
-        }
-
-        private void icon_search_MouseLeave(object sender, EventArgs e)
-        {
-            icon_search.IconFont = IconFont.Regular;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void bt_themyt_Click(object sender, EventArgs e)
-        {
-            Xuly_Data s = new Xuly_Data();
-            var tmp = s.themyeuthich(masp.Text);
-            if (tmp == 1) Console.WriteLine("Thanh Cong");
-            else Console.WriteLine("SAI!!!!");
-            Notification ct = new Notification();
-            ct.Message = "Đã thêm vào yêu thích";
-            ct.Show();
         }
     }
 }

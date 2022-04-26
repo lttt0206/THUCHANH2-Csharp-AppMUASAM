@@ -30,28 +30,40 @@ namespace MUASAM
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTSanPham));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dathang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.iconButton_mini = new FontAwesome.Sharp.IconButton();
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.bt_addgiohang = new FontAwesome.Sharp.IconButton();
-            this.masp = new System.Windows.Forms.Label();
-            this.icon_search = new FontAwesome.Sharp.IconButton();
-            this.mota = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gia = new System.Windows.Forms.Label();
-            this.tensp = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tinhtrang = new System.Windows.Forms.Label();
-            this.bt_themyt = new FontAwesome.Sharp.IconButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bt_dathang = new FontAwesome.Sharp.IconButton();
+            this.txt = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,163 +143,238 @@ namespace MUASAM
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(this.tinhtrang);
-            this.panelDesktop.Controls.Add(this.bt_addgiohang);
-            this.panelDesktop.Controls.Add(this.masp);
-            this.panelDesktop.Controls.Add(this.icon_search);
-            this.panelDesktop.Controls.Add(this.mota);
-            this.panelDesktop.Controls.Add(this.label1);
-            this.panelDesktop.Controls.Add(this.gia);
-            this.panelDesktop.Controls.Add(this.tensp);
-            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Controls.Add(this.textBox3);
+            this.panelDesktop.Controls.Add(this.label9);
+            this.panelDesktop.Controls.Add(this.label8);
+            this.panelDesktop.Controls.Add(this.textBox2);
+            this.panelDesktop.Controls.Add(this.label7);
+            this.panelDesktop.Controls.Add(this.textBox1);
             this.panelDesktop.Controls.Add(this.panel2);
-            this.panelDesktop.Controls.Add(this.bt_themyt);
+            this.panelDesktop.Controls.Add(this.txt);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 22);
+            this.panelDesktop.Font = new System.Drawing.Font("Open Sans ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDesktop.Location = new System.Drawing.Point(0, 25);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(984, 619);
+            this.panelDesktop.Size = new System.Drawing.Size(984, 616);
             this.panelDesktop.TabIndex = 9;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
-            // bt_addgiohang
+            // textBox3
             // 
-            this.bt_addgiohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(87)))), ((int)(((byte)(25)))));
-            this.bt_addgiohang.FlatAppearance.BorderSize = 0;
-            this.bt_addgiohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_addgiohang.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_addgiohang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bt_addgiohang.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.bt_addgiohang.IconColor = System.Drawing.Color.Black;
-            this.bt_addgiohang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_addgiohang.Location = new System.Drawing.Point(511, 210);
-            this.bt_addgiohang.Name = "bt_addgiohang";
-            this.bt_addgiohang.Size = new System.Drawing.Size(396, 54);
-            this.bt_addgiohang.TabIndex = 18;
-            this.bt_addgiohang.Text = "THÊM VÀO GIỎ HÀNG";
-            this.bt_addgiohang.UseVisualStyleBackColor = false;
-            this.bt_addgiohang.Click += new System.EventHandler(this.bt_addgiohang_Click);
+            this.textBox3.Location = new System.Drawing.Point(16, 354);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(458, 40);
+            this.textBox3.TabIndex = 27;
             // 
-            // masp
+            // label9
             // 
-            this.masp.AutoSize = true;
-            this.masp.Location = new System.Drawing.Point(598, 291);
-            this.masp.Name = "masp";
-            this.masp.Size = new System.Drawing.Size(41, 13);
-            this.masp.TabIndex = 17;
-            this.masp.Text = "label2";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Open Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(12, 317);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(229, 23);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Số điện thoại người nhận:";
             // 
-            // icon_search
+            // label8
             // 
-            this.icon_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
-            this.icon_search.FlatAppearance.BorderSize = 0;
-            this.icon_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icon_search.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.icon_search.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.icon_search.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.icon_search.IconSize = 30;
-            this.icon_search.Location = new System.Drawing.Point(913, 210);
-            this.icon_search.Name = "icon_search";
-            this.icon_search.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.icon_search.Size = new System.Drawing.Size(54, 54);
-            this.icon_search.TabIndex = 15;
-            this.icon_search.UseVisualStyleBackColor = false;
-            this.icon_search.Click += new System.EventHandler(this.icon_search_Click);
-            this.icon_search.MouseLeave += new System.EventHandler(this.icon_search_MouseLeave);
-            this.icon_search.MouseHover += new System.EventHandler(this.icon_search_MouseHover);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nunito Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(12, 422);
+            this.label8.MaximumSize = new System.Drawing.Size(450, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(440, 44);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Lưu ý: Nhập tên người nhận, địa chỉ nhận hàng và số điện thoại người nhận trước k" +
+    "hi nhấn nút đặt hàng.";
             // 
-            // mota
+            // textBox2
             // 
-            this.mota.AutoSize = true;
-            this.mota.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mota.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mota.Location = new System.Drawing.Point(507, 315);
-            this.mota.MaximumSize = new System.Drawing.Size(450, 0);
-            this.mota.Name = "mota";
-            this.mota.Size = new System.Drawing.Size(53, 23);
-            this.mota.TabIndex = 5;
-            this.mota.Text = "Mô tả";
+            this.textBox2.Location = new System.Drawing.Point(16, 235);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(458, 40);
+            this.textBox2.TabIndex = 24;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Open Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(12, 198);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 23);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Địa chỉ nhận hàng:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 115);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(458, 40);
+            this.textBox1.TabIndex = 22;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.bt_dathang);
+            this.panel2.Location = new System.Drawing.Point(494, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(470, 601);
+            this.panel2.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(305, 489);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(150, 23);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Tổng thanh toán:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(9, 489);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 23);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Tổng thanh toán:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(378, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 23);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Số lượng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(20, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 23);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Tên sản phẩm";
+            // 
+            // panel3
+            // 
+            this.panel3.AutoSize = true;
+            this.panel3.Controls.Add(this.panel8);
+            this.panel3.Controls.Add(this.panel7);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(14, 71);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(441, 402);
+            this.panel3.TabIndex = 23;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(4, 68);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(434, 10);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(4, 52);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(434, 10);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(4, 36);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(434, 10);
+            this.panel6.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(4, 20);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(434, 10);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(4, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(434, 10);
+            this.panel4.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(507, 291);
+            this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(18, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.Size = new System.Drawing.Size(238, 31);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Mô tả";
+            this.label1.Text = "HÓA ĐƠN ĐƠN HÀNG";
             // 
-            // gia
+            // label2
             // 
-            this.gia.AutoSize = true;
-            this.gia.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.gia.Location = new System.Drawing.Point(505, 152);
-            this.gia.Name = "gia";
-            this.gia.Size = new System.Drawing.Size(144, 31);
-            this.gia.TabIndex = 2;
-            this.gia.Text = "100.000 VNĐ";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Nunito Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(433, 29);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "------------------------------------------";
             // 
-            // tensp
+            // bt_dathang
             // 
-            this.tensp.AutoSize = true;
-            this.tensp.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tensp.Location = new System.Drawing.Point(505, 42);
-            this.tensp.MaximumSize = new System.Drawing.Size(450, 0);
-            this.tensp.Name = "tensp";
-            this.tensp.Size = new System.Drawing.Size(443, 93);
-            this.tensp.TabIndex = 1;
-            this.tensp.Text = "Tên sản phẩm aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            this.bt_dathang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bt_dathang.FlatAppearance.BorderSize = 0;
+            this.bt_dathang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_dathang.Font = new System.Drawing.Font("Open Sans ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_dathang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bt_dathang.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.bt_dathang.IconColor = System.Drawing.Color.Black;
+            this.bt_dathang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_dathang.Location = new System.Drawing.Point(33, 527);
+            this.bt_dathang.Name = "bt_dathang";
+            this.bt_dathang.Size = new System.Drawing.Size(396, 54);
+            this.bt_dathang.TabIndex = 20;
+            this.bt_dathang.Text = "ĐẶT HÀNG";
+            this.bt_dathang.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // txt
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(46, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 425);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.txt.AutoSize = true;
+            this.txt.Font = new System.Drawing.Font("Open Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txt.Location = new System.Drawing.Point(12, 78);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(148, 23);
+            this.txt.TabIndex = 19;
+            this.txt.Text = "Tên người nhận:";
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(34, 28);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 450);
-            this.panel2.TabIndex = 16;
-            // 
-            // tinhtrang
-            // 
-            this.tinhtrang.AutoSize = true;
-            this.tinhtrang.Font = new System.Drawing.Font("Open Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tinhtrang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tinhtrang.Location = new System.Drawing.Point(739, 158);
-            this.tinhtrang.Name = "tinhtrang";
-            this.tinhtrang.Size = new System.Drawing.Size(103, 23);
-            this.tinhtrang.TabIndex = 19;
-            this.tinhtrang.Text = "Tình trạng:";
-            this.tinhtrang.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // bt_themyt
-            // 
-            this.bt_themyt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
-            this.bt_themyt.FlatAppearance.BorderSize = 0;
-            this.bt_themyt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_themyt.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_themyt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bt_themyt.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.bt_themyt.IconColor = System.Drawing.Color.Black;
-            this.bt_themyt.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_themyt.Location = new System.Drawing.Point(511, 210);
-            this.bt_themyt.Name = "bt_themyt";
-            this.bt_themyt.Size = new System.Drawing.Size(396, 54);
-            this.bt_themyt.TabIndex = 20;
-            this.bt_themyt.Text = "THÊM VÀO YÊU THÍCH";
-            this.bt_themyt.UseVisualStyleBackColor = false;
-            this.bt_themyt.Click += new System.EventHandler(this.bt_themyt_Click);
-            // 
-            // CTSanPham
+            // Dathang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,7 +388,7 @@ namespace MUASAM
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CTSanPham";
+            this.Name = "Dathang";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -311,7 +398,9 @@ namespace MUASAM
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -323,17 +412,28 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label gia;
-        private System.Windows.Forms.Label tensp;
-        private System.Windows.Forms.Label mota;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton icon_search;
+        private System.Windows.Forms.Label txt;
+        private FontAwesome.Sharp.IconButton bt_dathang;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label masp;
-        private FontAwesome.Sharp.IconButton bt_addgiohang;
-        private System.Windows.Forms.Label tinhtrang;
-        private FontAwesome.Sharp.IconButton bt_themyt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
     }
 }
 

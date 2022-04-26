@@ -107,6 +107,12 @@
     <Compile Include="Mypham.Designer.cs">
       <DependentUpon>Mypham.cs</DependentUpon>
     </Compile>
+    <Compile Include="SPHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPHoadon.Designer.cs">
+      <DependentUpon>SPHoadon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Thoitrangnu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mypham.resx">
       <DependentUpon>Mypham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPHoadon.resx">
+      <DependentUpon>SPHoadon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Thoitrangnu.resx">
       <DependentUpon>Thoitrangnu.cs</DependentUpon>

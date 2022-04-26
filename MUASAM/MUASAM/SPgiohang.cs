@@ -51,8 +51,9 @@ namespace MUASAM
                 tensp1.Text = tmp.tensanpham;
                 ma1.Text = tmp.idsanpham.ToString();
                 ma1.Hide();
-                gia1.Text = tmp.gia.ToString("#,##0") + " VNĐ";
+                gia1.Text = list[i].soluong.ToString() + " x " + tmp.gia.ToString("#,##0");
                 soluong1.Text = list[i].soluong.ToString();
+                tien1.Text = (tmp.gia * list[i].soluong).ToString("#,##0") + " VNĐ";
                 i++;
             }
             else
@@ -70,8 +71,9 @@ namespace MUASAM
                 tensp2.Text = tmp.tensanpham;
                 ma2.Text = tmp.idsanpham.ToString();
                 ma2.Hide();
-                gia2.Text = tmp.gia.ToString("#,##0") + " VNĐ";
+                gia2.Text = list[i].soluong.ToString() + " x " + tmp.gia.ToString("#,##0");
                 soluong2.Text = list[i].soluong.ToString();
+                tien2.Text = (tmp.gia * list[i].soluong).ToString("#,##0") + " VNĐ";
                 i++;
             }
             else
@@ -89,8 +91,9 @@ namespace MUASAM
                 tensp3.Text = tmp.tensanpham;
                 ma3.Text = tmp.idsanpham.ToString();
                 ma3.Hide();
-                gia3.Text = tmp.gia.ToString("#,##0") + " VNĐ";
+                gia3.Text = list[i].soluong.ToString() + " x " + tmp.gia.ToString("#,##0");
                 soluong3.Text = list[i].soluong.ToString();
+                tien3.Text = (tmp.gia * list[i].soluong).ToString("#,##0") + " VNĐ";
                 i++;
             }
             else
@@ -128,6 +131,29 @@ namespace MUASAM
                 ct.Show();
             }
         }
-       
+
+        private void bt_xoa1_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.xoaspgiohang(ma1.Text);
+            this.Invalidate();
+            panel1.Hide();
+        }
+
+        private void xoa2_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.xoaspgiohang(ma2.Text);
+            this.Invalidate();
+            panel2.Hide();
+        }
+
+        private void xoa3_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            var tmp = s.xoaspgiohang(ma3.Text);
+            this.Invalidate();
+            panel3.Hide();
+        }
     }
 }

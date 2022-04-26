@@ -40,7 +40,8 @@ namespace MUASAM
             panel11.Hide();
             panel12.Hide();
             int tmp = 466;
-            if (list.Count > i)
+            Console.WriteLine(list.Count);
+            if (list.Count >= i)
             {
                 panel4.Show();
                 panel4.Size = new Size(758, 460);
@@ -55,7 +56,7 @@ namespace MUASAM
                 ct2.BringToFront();
                 ct2.Show();
                 i += 3;
-                if (list.Count > i)
+                if (list.Count >= i)
                 {
                     panel5.Show();
                     panel5.Size = new Size(758, 460);
@@ -70,7 +71,7 @@ namespace MUASAM
                     ct3.BringToFront();
                     ct3.Show(); 
                     i += 3;
-                    if (list.Count > i)
+                    if (list.Count >= i)
                     {
                         panel6.Show();
                         panel6.Size = new Size(758, 460);
@@ -85,7 +86,7 @@ namespace MUASAM
                         ct4.BringToFront();
                         ct4.Show();
                         i += 3;
-                        if (list.Count > i)
+                        if (list.Count >= i)
                         {
                             panel7.Show();
                             panel7.Size = new Size(758, 460);
@@ -100,7 +101,7 @@ namespace MUASAM
                             ct5.BringToFront();
                             ct5.Show();
                             i += 3;
-                            if (list.Count > i)
+                            if (list.Count >= i)
                             {
                                 panel8.Show();
                                 panel8.Size = new Size(758, 460);
@@ -115,7 +116,7 @@ namespace MUASAM
                                 ct6.BringToFront();
                                 ct6.Show();
                                 i += 3;
-                                if (list.Count > i)
+                                if (list.Count >= i)
                                 {
                                     panel9.Show();
                                     panel9.Size = new Size(758, 460);
@@ -130,7 +131,7 @@ namespace MUASAM
                                     ct7.BringToFront();
                                     ct7.Show();
                                     i += 3;
-                                    if (list.Count > i)
+                                    if (list.Count >= i)
                                     {
                                         panel10.Show();
                                         panel10.Size = new Size(758, 460);
@@ -145,7 +146,7 @@ namespace MUASAM
                                         ct8.BringToFront();
                                         ct8.Show();
                                         i += 3;
-                                        if (list.Count > i)
+                                        if (list.Count >= i)
                                         {
                                             panel11.Show();
                                             panel11.Size = new Size(758, 460);
@@ -160,7 +161,7 @@ namespace MUASAM
                                             ct9.BringToFront();
                                             ct9.Show();
                                             i += 3;
-                                            if (list.Count > i)
+                                            if (list.Count >= i)
                                             {
                                                 panel12.Show();
                                                 panel12.Size = new Size(758, 460);
@@ -185,6 +186,15 @@ namespace MUASAM
                 }
 
             }
+
+            Sanpham tmpsp = new Sanpham();
+            int tmpi = 0;
+            int sum = 0;
+            while (list.Count > i)
+            {
+                tmpsp=s.getSP()
+                sum
+            }
         }
 
                
@@ -196,6 +206,12 @@ namespace MUASAM
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_addgiohang_Click(object sender, EventArgs e)
+        {
+            Dathang ct = new Dathang();
+            ct.Show();
         }
     }
 }
