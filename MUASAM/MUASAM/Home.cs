@@ -217,5 +217,12 @@ namespace MUASAM
         {
             iconButton1.BackColor = Color.FromArgb(35, 40, 52);
         }
+
+        private void icon_search_Click(object sender, EventArgs e)
+        {
+            Timkiem ct = new Timkiem();
+            ct.Message = text_search.Text;
+            ct.Show();
+        }
     }
 }

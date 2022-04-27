@@ -14,6 +14,6 @@ namespace MUASAM
         public string sdt { get; set; }
         public int thanhtien { get; set; }
         public int tinhtrang { get; set; }
-        public DateTime ngaydat { get; set; }
+        public string ngaydat { get; set; }
     }
 }

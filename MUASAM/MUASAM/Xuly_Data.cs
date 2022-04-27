@@ -274,5 +274,86 @@ namespace MUASAM
             var tmp = cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+        public List<Sanpham> sqlGetSanphamYeuThich()
+        {
+            List<Sanpham> list = new List<Sanpham>();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from YeuThich";
+            List<Yeuthich> list1 = new List<Yeuthich>();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list1.Add(new Yeuthich()
+                    {
+                        idsanpham = Convert.ToInt32(reader["idsanpham"])
+                    });
+                }
+                reader.Close();
+            }
+            int i = 0;
+            while (list1.Count > i)
+            {
+                list.Add(getSP(list1[i].idsanpham.ToString()));
+                i++;
+            }
+            conn.Close();
+            return list;
+        }
+        public List<Sanpham> timkiemSanpham(string tukhoa)
+        {
+            List<Sanpham> list = new List<Sanpham>();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from Sanpham where tensanpham LIKE '%" + tukhoa + "%'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list.Add(new Sanpham()
+                    {
+                        idsanpham = Convert.ToInt32(reader["idsanpham"]),
+                        tensanpham = reader["tensanpham"].ToString(),
+                        gia = Convert.ToInt32(reader["gia"]),
+                        daban = Convert.ToInt32(reader["daban"])
+                    });
+                }
+                reader.Close();
+            }
+            conn.Close();
+            return list;
+        }
+
+        public List<Donhang> getDonhang()
+        {
+            List<Donhang> list = new List<Donhang>();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from Donhang";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list.Add(new Donhang()
+                    {
+                        iddonhang = Convert.ToInt32(reader["iddonhang"]),
+                        ngaydat = reader["ngaydat"].ToString(),
+                        tennguoinhan = reader["tennguoinhan"].ToString(),
+                        diachinhan = reader["diachinhan"].ToString(),
+                        sdt = reader["sdt"].ToString(),
+                        thanhtien = Convert.ToInt32(reader["thanhtien"]),
+                        tinhtrang = Convert.ToInt32(reader["tinhtrang"])
+                    });
+                }
+                reader.Close();
+            }
+            conn.Close();
+            return list;
+        }
     }
 }

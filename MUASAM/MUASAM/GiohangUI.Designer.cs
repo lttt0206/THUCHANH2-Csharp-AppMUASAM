@@ -34,6 +34,9 @@ namespace MUASAM
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.label_head = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.thanhtien = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tien = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,7 +55,6 @@ namespace MUASAM
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tien = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +85,8 @@ namespace MUASAM
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(59)))));
+            this.panel1.Controls.Add(this.thanhtien);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.tien);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.iconButton1);
@@ -92,21 +96,54 @@ namespace MUASAM
             this.panel1.Controls.Add(this.tongtien);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 505);
+            this.panel1.Location = new System.Drawing.Point(0, 452);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 114);
+            this.panel1.Size = new System.Drawing.Size(784, 167);
             this.panel1.TabIndex = 1;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.AutoSize = true;
+            this.thanhtien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thanhtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.thanhtien.Location = new System.Drawing.Point(147, 127);
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.Size = new System.Drawing.Size(114, 31);
+            this.thanhtien.TabIndex = 26;
+            this.thanhtien.Text = "1000VNĐ ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(12, 127);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 31);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Thành tiền: ";
+            // 
+            // tien
+            // 
+            this.tien.AutoSize = true;
+            this.tien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.tien.Location = new System.Drawing.Point(478, 74);
+            this.tien.Name = "tien";
+            this.tien.Size = new System.Drawing.Size(114, 31);
+            this.tien.TabIndex = 24;
+            this.tien.Text = "1000VNĐ ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(7, 47);
+            this.label4.Location = new System.Drawing.Point(13, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 27);
+            this.label4.Size = new System.Drawing.Size(70, 27);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Số lượng:";
+            this.label4.Text = "Giảm: ";
             // 
             // iconButton1
             // 
@@ -167,8 +204,8 @@ namespace MUASAM
             // 
             this.tongtien.AutoSize = true;
             this.tongtien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.tongtien.Location = new System.Drawing.Point(146, 74);
+            this.tongtien.ForeColor = System.Drawing.Color.White;
+            this.tongtien.Location = new System.Drawing.Point(146, 56);
             this.tongtien.Name = "tongtien";
             this.tongtien.Size = new System.Drawing.Size(114, 31);
             this.tongtien.TabIndex = 4;
@@ -179,11 +216,11 @@ namespace MUASAM
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(6, 74);
+            this.label1.Location = new System.Drawing.Point(11, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 31);
+            this.label1.Size = new System.Drawing.Size(119, 31);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Thành tiền: ";
+            this.label1.Text = "Tạm tính: ";
             // 
             // panel2
             // 
@@ -199,9 +236,9 @@ namespace MUASAM
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 39);
+            this.panel2.Location = new System.Drawing.Point(0, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 466);
+            this.panel2.Size = new System.Drawing.Size(784, 405);
             this.panel2.TabIndex = 2;
             // 
             // panel12
@@ -274,17 +311,6 @@ namespace MUASAM
             this.panel3.Size = new System.Drawing.Size(756, 10);
             this.panel3.TabIndex = 1;
             // 
-            // tien
-            // 
-            this.tien.AutoSize = true;
-            this.tien.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.tien.Location = new System.Drawing.Point(478, 74);
-            this.tien.Name = "tien";
-            this.tien.Size = new System.Drawing.Size(114, 31);
-            this.tien.TabIndex = 24;
-            this.tien.Text = "1000VNĐ ";
-            // 
             // GiohangUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -333,10 +359,12 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton bt_addgiohang;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label tien;
+        private System.Windows.Forms.Label thanhtien;
+        private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBarcode;
-        private System.Windows.Forms.Label tien;
     }
 }
 

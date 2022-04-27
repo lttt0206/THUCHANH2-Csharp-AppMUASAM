@@ -1,7 +1,7 @@
 ﻿
 namespace MUASAM
 {
-    partial class YeuthichUI
+    partial class Timkiem
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace MUASAM
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YeuthichUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timkiem));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.iconButton_mini = new FontAwesome.Sharp.IconButton();
@@ -151,9 +151,9 @@ namespace MUASAM
             this.label_head.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label_head.Location = new System.Drawing.Point(12, 3);
             this.label_head.Name = "label_head";
-            this.label_head.Size = new System.Drawing.Size(129, 31);
+            this.label_head.Size = new System.Drawing.Size(111, 31);
             this.label_head.TabIndex = 4;
-            this.label_head.Text = "YÊU THÍCH ";
+            this.label_head.Text = "TÌM KIẾM";
             // 
             // panel2
             // 
@@ -276,7 +276,7 @@ namespace MUASAM
             this.panel3.Size = new System.Drawing.Size(960, 10);
             this.panel3.TabIndex = 1;
             // 
-            // YeuthichUI
+            // Timkiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -290,7 +290,7 @@ namespace MUASAM
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "YeuthichUI";
+            this.Name = "Timkiem";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

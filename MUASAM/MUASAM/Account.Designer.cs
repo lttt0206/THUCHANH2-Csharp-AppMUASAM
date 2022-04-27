@@ -33,9 +33,12 @@ namespace MUASAM
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Account));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.label_head = new System.Windows.Forms.Label();
-            this.masp = new System.Windows.Forms.Label();
-            this.bt_xemsp = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -61,52 +64,61 @@ namespace MUASAM
             this.label_head.TabIndex = 0;
             this.label_head.Text = "TRANG CÁ NHÂN";
             // 
-            // masp
-            // 
-            this.masp.AutoSize = true;
-            this.masp.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.masp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.masp.Location = new System.Drawing.Point(620, 534);
-            this.masp.Name = "masp";
-            this.masp.Size = new System.Drawing.Size(95, 27);
-            this.masp.TabIndex = 20;
-            this.masp.Text = "Barcode:";
-            // 
-            // bt_xemsp
-            // 
-            this.bt_xemsp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(87)))), ((int)(((byte)(25)))));
-            this.bt_xemsp.FlatAppearance.BorderSize = 0;
-            this.bt_xemsp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xemsp.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xemsp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bt_xemsp.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.bt_xemsp.IconColor = System.Drawing.Color.Black;
-            this.bt_xemsp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_xemsp.Location = new System.Drawing.Point(50, 111);
-            this.bt_xemsp.Name = "bt_xemsp";
-            this.bt_xemsp.Size = new System.Drawing.Size(396, 54);
-            this.bt_xemsp.TabIndex = 19;
-            this.bt_xemsp.Text = "XEM CHI TIẾT SẢN PHẨM";
-            this.bt_xemsp.UseVisualStyleBackColor = false;
-            this.bt_xemsp.Click += new System.EventHandler(this.bt_xemsp_Click);
-            // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Red;
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Yoast;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(568, 163);
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.iconButton1.Location = new System.Drawing.Point(3, 3);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(171, 52);
+            this.iconButton1.Size = new System.Drawing.Size(769, 82);
             this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "CHỌN BARCODE";
+            this.iconButton1.Text = "<      XEM YÊU THÍCH";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Location = new System.Drawing.Point(0, 67);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(784, 88);
+            this.panel1.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.iconButton2);
+            this.panel2.Location = new System.Drawing.Point(0, 161);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(784, 88);
+            this.panel2.TabIndex = 22;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Yoast;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.iconButton2.Location = new System.Drawing.Point(3, 3);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(769, 82);
+            this.iconButton2.TabIndex = 2;
+            this.iconButton2.Text = "<      XEM LỊCH SỬ ĐƠN HÀNG";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // Account
             // 
@@ -115,9 +127,8 @@ namespace MUASAM
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(784, 619);
-            this.Controls.Add(this.masp);
-            this.Controls.Add(this.bt_xemsp);
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_head);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +141,8 @@ namespace MUASAM
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Cornsilk;
             this.Load += new System.EventHandler(this.Barcode_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,8 +152,9 @@ namespace MUASAM
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Label label_head;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton bt_xemsp;
-        private System.Windows.Forms.Label masp;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }
 

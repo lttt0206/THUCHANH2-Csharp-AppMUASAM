@@ -1,7 +1,7 @@
 ﻿
 namespace MUASAM
 {
-    partial class XemthemYeuThich
+    partial class XemthemTimkiem
     {
         /// <summary>
         /// Required designer variable.

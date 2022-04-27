@@ -38,3 +38,10 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.GiohangUI.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.SPgiohang.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.SPHoadon.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Account.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.LichsuDonhang.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemYeuThich.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.YeuthichUI.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemTimkiem.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Timkiem.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemLS.resources

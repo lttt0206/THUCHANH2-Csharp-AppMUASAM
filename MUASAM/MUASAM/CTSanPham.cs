@@ -91,11 +91,12 @@ namespace MUASAM
         {
             Xuly_Data s = new Xuly_Data();
             var tmp = s.themgiohang(masp.Text);
-            if (tmp == 1) Console.WriteLine("Thanh Cong");
-            else Console.WriteLine("SAI!!!!");
-            Notification ct = new Notification();
-            ct.Message = "Đã thêm vào giỏ hàng";
-            ct.Show();
+            if (tmp == 1)
+            {
+                Notification ct = new Notification();
+                ct.Message = "Đã thêm vào giỏ hàng";
+                ct.Show();
+            }
         }
 
         private void icon_search_Click(object sender, EventArgs e)

@@ -198,6 +198,10 @@ namespace MUASAM
             tien.Text = sum.ToString();
             tien.Hide();
             tongtien.Text = sum.ToString("#,##0") + " VNĐ";
+            int giam = Convert.ToInt32(sum * 0.1);
+            int tt = sum - giam;
+            label4.Text = "Giảm: " + giam.ToString("#,##0") + " VNĐ";
+            thanhtien.Text = tt.ToString("#,##0") + " VNĐ";
         }
 
 
@@ -214,7 +218,7 @@ namespace MUASAM
         private void bt_addgiohang_Click(object sender, EventArgs e)
         {
             Dathang ct = new Dathang();
-            ct.Message = tien.Text;
+            ct.Message = thanhtien.Text;
             ct.Show();
         }
     }

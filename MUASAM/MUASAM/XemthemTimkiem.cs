@@ -12,10 +12,10 @@ using FontAwesome.Sharp;
 
 namespace MUASAM
 {
-    public partial class XemthemYeuThich : KryptonForm
+    public partial class XemthemTimkiem : KryptonForm
     {
         string strNhan;
-        public XemthemYeuThich()
+        public XemthemTimkiem()
         {
             InitializeComponent();
             this.Text = string.Empty;
@@ -37,9 +37,10 @@ namespace MUASAM
 
         private void Xemthem_Load(object sender, EventArgs e)
         {
-            int tmp = Convert.ToInt32(strNhan);
+            string danhmuc = strNhan.Split('-')[0];
+            int tmp = Convert.ToInt32(strNhan.Split('-')[1]);
             Xuly_Data s = new Xuly_Data();
-            List<Sanpham> list = s.sqlGetSanphamYeuThich();
+            List<Sanpham> list = s.timkiemSanpham(danhmuc);
             int i = tmp-1;
 
             if (list.Count > i)

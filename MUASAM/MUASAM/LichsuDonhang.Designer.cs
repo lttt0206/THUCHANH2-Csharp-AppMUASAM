@@ -1,7 +1,7 @@
 ﻿
 namespace MUASAM
 {
-    partial class LichsuDonhang
+    partial class Lichsudonhang
     {
         /// <summary>
         /// Required designer variable.
@@ -30,18 +30,33 @@ namespace MUASAM
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LichsuDonhang));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lichsudonhang));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.iconButton_mini = new FontAwesome.Sharp.IconButton();
+            this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label_head = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.iconButton_mini = new FontAwesome.Sharp.IconButton();
-            this.iconButton_Close = new FontAwesome.Sharp.IconButton();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,48 +70,6 @@ namespace MUASAM
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 22);
             this.panel1.TabIndex = 7;
-            // 
-            // kryptonPalette1
-            // 
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 3;
-            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Controls.Add(this.label_head);
-            this.panelDesktop.Controls.Add(this.panel2);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 22);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(984, 619);
-            this.panelDesktop.TabIndex = 9;
-            // 
-            // label_head
-            // 
-            this.label_head.AutoSize = true;
-            this.label_head.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_head.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_head.Location = new System.Drawing.Point(12, 3);
-            this.label_head.Name = "label_head";
-            this.label_head.Size = new System.Drawing.Size(212, 31);
-            this.label_head.TabIndex = 4;
-            this.label_head.Text = "LỊCH SỬ ĐẶT HÀNG";
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 38);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 581);
-            this.panel2.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -149,7 +122,161 @@ namespace MUASAM
             this.iconButton_Close.MouseLeave += new System.EventHandler(this.iconButton_Close_MouseLeave);
             this.iconButton_Close.MouseHover += new System.EventHandler(this.iconButton_Close_MouseHover);
             // 
-            // LichsuDonhang
+            // kryptonPalette1
+            // 
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 3;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Controls.Add(this.label_head);
+            this.panelDesktop.Controls.Add(this.panel2);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelDesktop.Location = new System.Drawing.Point(0, 22);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(984, 619);
+            this.panelDesktop.TabIndex = 9;
+            // 
+            // label_head
+            // 
+            this.label_head.AutoSize = true;
+            this.label_head.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_head.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_head.Location = new System.Drawing.Point(12, 3);
+            this.label_head.Name = "label_head";
+            this.label_head.Size = new System.Drawing.Size(212, 31);
+            this.label_head.TabIndex = 4;
+            this.label_head.Text = "LỊCH SỬ ĐẶT HÀNG";
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.panel16);
+            this.panel2.Controls.Add(this.panel15);
+            this.panel2.Controls.Add(this.panel14);
+            this.panel2.Controls.Add(this.panel13);
+            this.panel2.Controls.Add(this.panel12);
+            this.panel2.Controls.Add(this.panel11);
+            this.panel2.Controls.Add(this.panel10);
+            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(984, 581);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel16
+            // 
+            this.panel16.Location = new System.Drawing.Point(105, 216);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(756, 10);
+            this.panel16.TabIndex = 3;
+            // 
+            // panel15
+            // 
+            this.panel15.Location = new System.Drawing.Point(105, 200);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(756, 10);
+            this.panel15.TabIndex = 2;
+            // 
+            // panel14
+            // 
+            this.panel14.Location = new System.Drawing.Point(105, 184);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(756, 10);
+            this.panel14.TabIndex = 2;
+            // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(105, 168);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(756, 10);
+            this.panel13.TabIndex = 1;
+            // 
+            // panel12
+            // 
+            this.panel12.Location = new System.Drawing.Point(105, 152);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(756, 10);
+            this.panel12.TabIndex = 1;
+            // 
+            // panel11
+            // 
+            this.panel11.Location = new System.Drawing.Point(105, 136);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(756, 10);
+            this.panel11.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.Location = new System.Drawing.Point(105, 120);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(756, 10);
+            this.panel10.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(105, 104);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(756, 10);
+            this.panel9.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(105, 88);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(756, 10);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(105, 72);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(756, 10);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(105, 56);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(756, 10);
+            this.panel6.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(12, 40);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(756, 10);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(12, 24);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(960, 10);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(12, 8);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(960, 10);
+            this.panel3.TabIndex = 1;
+            // 
+            // Lichsudonhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -163,16 +290,17 @@ namespace MUASAM
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "LichsuDonhang";
+            this.Name = "Lichsudonhang";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Cornsilk;
             this.Load += new System.EventHandler(this.CTSanPham_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -185,7 +313,21 @@ namespace MUASAM
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label_head;
+        private System.Windows.Forms.Panel panel16;
     }
 }
 

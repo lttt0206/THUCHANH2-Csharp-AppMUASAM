@@ -32,12 +32,11 @@ namespace MUASAM
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.iconButton_mini = new FontAwesome.Sharp.IconButton();
+            this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.text_search = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label_head = new System.Windows.Forms.Label();
-            this.icon_search = new FontAwesome.Sharp.IconButton();
             this.bt_barcode = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.bt_nhasach = new FontAwesome.Sharp.IconButton();
@@ -48,14 +47,15 @@ namespace MUASAM
             this.bt_thoitrangnam = new FontAwesome.Sharp.IconButton();
             this.bt_dientu = new FontAwesome.Sharp.IconButton();
             this.bt_giadung = new FontAwesome.Sharp.IconButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.iconButton_mini = new FontAwesome.Sharp.IconButton();
-            this.iconButton_Close = new FontAwesome.Sharp.IconButton();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label_head = new System.Windows.Forms.Label();
+            this.icon_search = new FontAwesome.Sharp.IconButton();
+            this.text_search = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel1.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +69,57 @@ namespace MUASAM
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 22);
             this.panel1.TabIndex = 7;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // iconButton_mini
+            // 
+            this.iconButton_mini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton_mini.FlatAppearance.BorderSize = 0;
+            this.iconButton_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton_mini.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton_mini.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton_mini.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton_mini.IconColor = System.Drawing.Color.White;
+            this.iconButton_mini.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton_mini.IconSize = 15;
+            this.iconButton_mini.Location = new System.Drawing.Point(897, 0);
+            this.iconButton_mini.Name = "iconButton_mini";
+            this.iconButton_mini.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.iconButton_mini.Size = new System.Drawing.Size(42, 22);
+            this.iconButton_mini.TabIndex = 9;
+            this.iconButton_mini.UseVisualStyleBackColor = false;
+            this.iconButton_mini.Click += new System.EventHandler(this.iconButton_mini_Click);
+            this.iconButton_mini.MouseLeave += new System.EventHandler(this.iconButton_mini_MouseLeave);
+            this.iconButton_mini.MouseHover += new System.EventHandler(this.iconButton_mini_MouseHover);
+            // 
+            // iconButton_Close
+            // 
+            this.iconButton_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton_Close.FlatAppearance.BorderSize = 0;
+            this.iconButton_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton_Close.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton_Close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton_Close.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconButton_Close.IconColor = System.Drawing.Color.White;
+            this.iconButton_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton_Close.IconSize = 15;
+            this.iconButton_Close.Location = new System.Drawing.Point(942, 0);
+            this.iconButton_Close.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton_Close.Name = "iconButton_Close";
+            this.iconButton_Close.Size = new System.Drawing.Size(42, 22);
+            this.iconButton_Close.TabIndex = 8;
+            this.iconButton_Close.UseVisualStyleBackColor = false;
+            this.iconButton_Close.Click += new System.EventHandler(this.iconButton_Close_Click);
+            this.iconButton_Close.MouseLeave += new System.EventHandler(this.iconButton_Close_MouseLeave);
+            this.iconButton_Close.MouseHover += new System.EventHandler(this.iconButton_Close_MouseHover);
             // 
             // kryptonPalette1
             // 
@@ -99,58 +150,6 @@ namespace MUASAM
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 619);
             this.panelMenu.TabIndex = 8;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Controls.Add(this.label_head);
-            this.panelDesktop.Controls.Add(this.icon_search);
-            this.panelDesktop.Controls.Add(this.text_search);
-            this.panelDesktop.Location = new System.Drawing.Point(200, 22);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(784, 619);
-            this.panelDesktop.TabIndex = 9;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // text_search
-            // 
-            this.text_search.Location = new System.Drawing.Point(484, 6);
-            this.text_search.Name = "text_search";
-            this.text_search.Size = new System.Drawing.Size(247, 31);
-            this.text_search.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.text_search.StateCommon.Border.Rounding = 12;
-            this.text_search.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.text_search.TabIndex = 7;
-            this.text_search.Text = "Tìm kiếm ...";
-            this.text_search.Enter += new System.EventHandler(this.text_search_Enter);
-            // 
-            // label_head
-            // 
-            this.label_head.AutoSize = true;
-            this.label_head.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_head.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_head.Location = new System.Drawing.Point(250, 64);
-            this.label_head.Name = "label_head";
-            this.label_head.Size = new System.Drawing.Size(345, 31);
-            this.label_head.TabIndex = 15;
-            this.label_head.Text = "CHÀO MỪNG ĐẾN VỚI LTSTORE!";
-            // 
-            // icon_search
-            // 
-            this.icon_search.FlatAppearance.BorderSize = 0;
-            this.icon_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.icon_search.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.icon_search.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.icon_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icon_search.IconSize = 25;
-            this.icon_search.Location = new System.Drawing.Point(737, 10);
-            this.icon_search.Name = "icon_search";
-            this.icon_search.Size = new System.Drawing.Size(35, 28);
-            this.icon_search.TabIndex = 14;
-            this.icon_search.UseVisualStyleBackColor = true;
             // 
             // bt_barcode
             // 
@@ -327,56 +326,58 @@ namespace MUASAM
             this.bt_giadung.UseVisualStyleBackColor = true;
             this.bt_giadung.Click += new System.EventHandler(this.btgiadung_Click);
             // 
-            // pictureBox2
+            // panelDesktop
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.panelDesktop.Controls.Add(this.label_head);
+            this.panelDesktop.Controls.Add(this.icon_search);
+            this.panelDesktop.Controls.Add(this.text_search);
+            this.panelDesktop.Location = new System.Drawing.Point(200, 22);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(784, 619);
+            this.panelDesktop.TabIndex = 9;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
-            // iconButton_mini
+            // label_head
             // 
-            this.iconButton_mini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.iconButton_mini.FlatAppearance.BorderSize = 0;
-            this.iconButton_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton_mini.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
-            this.iconButton_mini.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton_mini.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconButton_mini.IconColor = System.Drawing.Color.White;
-            this.iconButton_mini.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton_mini.IconSize = 15;
-            this.iconButton_mini.Location = new System.Drawing.Point(897, 0);
-            this.iconButton_mini.Name = "iconButton_mini";
-            this.iconButton_mini.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.iconButton_mini.Size = new System.Drawing.Size(42, 22);
-            this.iconButton_mini.TabIndex = 9;
-            this.iconButton_mini.UseVisualStyleBackColor = false;
-            this.iconButton_mini.Click += new System.EventHandler(this.iconButton_mini_Click);
-            this.iconButton_mini.MouseLeave += new System.EventHandler(this.iconButton_mini_MouseLeave);
-            this.iconButton_mini.MouseHover += new System.EventHandler(this.iconButton_mini_MouseHover);
+            this.label_head.AutoSize = true;
+            this.label_head.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_head.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_head.Location = new System.Drawing.Point(213, 64);
+            this.label_head.Name = "label_head";
+            this.label_head.Size = new System.Drawing.Size(345, 31);
+            this.label_head.TabIndex = 15;
+            this.label_head.Text = "CHÀO MỪNG ĐẾN VỚI LTSTORE!";
             // 
-            // iconButton_Close
+            // icon_search
             // 
-            this.iconButton_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.iconButton_Close.FlatAppearance.BorderSize = 0;
-            this.iconButton_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton_Close.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
-            this.iconButton_Close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton_Close.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconButton_Close.IconColor = System.Drawing.Color.White;
-            this.iconButton_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton_Close.IconSize = 15;
-            this.iconButton_Close.Location = new System.Drawing.Point(942, 0);
-            this.iconButton_Close.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton_Close.Name = "iconButton_Close";
-            this.iconButton_Close.Size = new System.Drawing.Size(42, 22);
-            this.iconButton_Close.TabIndex = 8;
-            this.iconButton_Close.UseVisualStyleBackColor = false;
-            this.iconButton_Close.Click += new System.EventHandler(this.iconButton_Close_Click);
-            this.iconButton_Close.MouseLeave += new System.EventHandler(this.iconButton_Close_MouseLeave);
-            this.iconButton_Close.MouseHover += new System.EventHandler(this.iconButton_Close_MouseHover);
+            this.icon_search.FlatAppearance.BorderSize = 0;
+            this.icon_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icon_search.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.icon_search.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.icon_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icon_search.IconSize = 25;
+            this.icon_search.Location = new System.Drawing.Point(737, 10);
+            this.icon_search.Name = "icon_search";
+            this.icon_search.Size = new System.Drawing.Size(35, 28);
+            this.icon_search.TabIndex = 14;
+            this.icon_search.UseVisualStyleBackColor = true;
+            this.icon_search.Click += new System.EventHandler(this.icon_search_Click);
+            // 
+            // text_search
+            // 
+            this.text_search.Location = new System.Drawing.Point(484, 6);
+            this.text_search.Name = "text_search";
+            this.text_search.Size = new System.Drawing.Size(247, 31);
+            this.text_search.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.text_search.StateCommon.Border.Rounding = 12;
+            this.text_search.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.text_search.TabIndex = 7;
+            this.text_search.Text = "Tìm kiếm ...";
+            this.text_search.Enter += new System.EventHandler(this.text_search_Enter);
             // 
             // Home
             // 
@@ -400,11 +401,11 @@ namespace MUASAM
             this.TransparencyKey = System.Drawing.Color.Cornsilk;
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
