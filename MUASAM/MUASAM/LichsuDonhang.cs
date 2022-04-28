@@ -50,7 +50,7 @@ namespace MUASAM
             panel16.Hide();
             int tmp = 573;
             int tmp2 = 8;
-                if (list.Count > tmp2)
+                if (list.Count > i)
                 {
                     panel4.Show();
                     panel4.Size = new Size(960, 564);
@@ -66,7 +66,7 @@ namespace MUASAM
                     panel4.Controls.Add(ct3);
                     ct3.BringToFront();
                     ct3.Show();
-                    if (list.Count > tmp2)
+                    if (list.Count > i)
                     {
                         panel5.Show();
                         panel5.Size = new Size(960, 564);
@@ -82,7 +82,7 @@ namespace MUASAM
                         panel5.Controls.Add(ct4);
                         ct4.BringToFront();
                         ct4.Show();
-                        if (list.Count > tmp2)
+                        if (list.Count > i)
                         {
                             panel6.Show();
                             panel6.Size = new Size(960, 564);
@@ -98,7 +98,7 @@ namespace MUASAM
                             panel6.Controls.Add(ct5);
                             ct5.BringToFront();
                             ct5.Show();
-                            if (list.Count > tmp2)
+                            if (list.Count > i)
                             {
                                 panel7.Show();
                                 panel7.Size = new Size(960, 564);
@@ -114,7 +114,7 @@ namespace MUASAM
                                 panel7.Controls.Add(ct6);
                                 ct6.BringToFront();
                                 ct6.Show();
-                                if (list.Count > tmp2)
+                                if (list.Count > i)
                                 {
                                     panel8.Show();
                                     panel8.Size = new Size(960, 564);
@@ -130,7 +130,7 @@ namespace MUASAM
                                     panel8.Controls.Add(ct7);
                                     ct7.BringToFront();
                                     ct7.Show();
-                                    if (list.Count > tmp2)
+                                    if (list.Count > i)
                                     {
                                         panel9.Show();
                                         panel9.Size = new Size(960, 564);
@@ -146,7 +146,7 @@ namespace MUASAM
                                         panel9.Controls.Add(ct8);
                                         ct8.BringToFront();
                                         ct8.Show();
-                                        if (list.Count > tmp2)
+                                        if (list.Count > i)
                                         {
                                             panel10.Show();
                                             panel10.Size = new Size(960, 564);
@@ -162,7 +162,7 @@ namespace MUASAM
                                             panel10.Controls.Add(ct9);
                                             ct9.BringToFront();
                                             ct9.Show();
-                                            if (list.Count > tmp2)
+                                            if (list.Count > i)
                                             {
                                                 panel11.Show();
                                                 panel11.Size = new Size(960, 564);
@@ -178,7 +178,7 @@ namespace MUASAM
                                                 panel11.Controls.Add(ct10);
                                                 ct10.BringToFront();
                                                 ct10.Show();
-                                                if (list.Count > tmp2)
+                                                if (list.Count > i)
                                                 {
                                                     panel12.Show();
                                                     panel12.Size = new Size(960, 564);
@@ -194,7 +194,7 @@ namespace MUASAM
                                                     panel12.Controls.Add(ct11);
                                                     ct11.BringToFront();
                                                     ct11.Show();
-                                                    if (list.Count > tmp2)
+                                                    if (list.Count > i)
                                                     {
                                                         panel13.Show();
                                                         panel13.Size = new Size(960, 564);
@@ -210,7 +210,7 @@ namespace MUASAM
                                                         panel13.Controls.Add(ct12);
                                                         ct12.BringToFront();
                                                         ct12.Show();
-                                                        if (list.Count > tmp2)
+                                                        if (list.Count > i)
                                                         {
                                                             panel14.Show();
                                                             panel14.Size = new Size(960, 564);
@@ -226,7 +226,7 @@ namespace MUASAM
                                                             panel14.Controls.Add(ct13);
                                                             ct13.BringToFront();
                                                             ct13.Show();
-                                                            if (list.Count > tmp2)
+                                                            if (list.Count > i)
                                                             {
                                                                 panel15.Show();
                                                                 panel15.Size = new Size(960, 564);
@@ -242,7 +242,7 @@ namespace MUASAM
                                                                 panel15.Controls.Add(ct14);
                                                                 ct14.BringToFront();
                                                                 ct14.Show();
-                                                                if (list.Count > tmp2)
+                                                                if (list.Count > i)
                                                                 {
                                                                     panel16.Show();
                                                                     panel16.Size = new Size(960, 564);

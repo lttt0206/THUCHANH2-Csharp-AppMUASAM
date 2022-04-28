@@ -92,6 +92,12 @@
     <Compile Include="XemthemLS.Designer.cs">
       <DependentUpon>XemthemLS.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemthemDaxem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemthemDaxem.Designer.cs">
+      <DependentUpon>XemthemDaxem.cs</DependentUpon>
+    </Compile>
     <Compile Include="XemthemYeuThich.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="Lichsudonhang.Designer.cs">
       <DependentUpon>Lichsudonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaxemUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaxemUI.Designer.cs">
+      <DependentUpon>DaxemUI.cs</DependentUpon>
     </Compile>
     <Compile Include="YeuthichUI.cs">
       <SubType>Form</SubType>
@@ -235,6 +247,9 @@
     <EmbeddedResource Include="XemthemLS.resx">
       <DependentUpon>XemthemLS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XemthemDaxem.resx">
+      <DependentUpon>XemthemDaxem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XemthemYeuThich.resx">
       <DependentUpon>XemthemYeuThich.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lichsudonhang.resx">
       <DependentUpon>Lichsudonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaxemUI.resx">
+      <DependentUpon>DaxemUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YeuthichUI.resx">
       <DependentUpon>YeuthichUI.cs</DependentUpon>

@@ -195,13 +195,14 @@ namespace MUASAM
                 sum += (tmpsp.gia * list[tmpi].soluong);
                 tmpi++;
             }
-            tien.Text = sum.ToString();
-            tien.Hide();
+            
             tongtien.Text = sum.ToString("#,##0") + " VNĐ";
-            int giam = Convert.ToInt32(sum * 0.1);
+            int giam = 0;
             int tt = sum - giam;
             label4.Text = "Giảm: " + giam.ToString("#,##0") + " VNĐ";
             thanhtien.Text = tt.ToString("#,##0") + " VNĐ";
+            tien.Text = tt.ToString();
+            tien.Hide();
         }
 
 
@@ -212,13 +213,71 @@ namespace MUASAM
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            Xuly_Data s = new Xuly_Data();
+            List<Giohang> list = s.sqlGetGiohang();
+            if (txt.Text=="KM10")
+            {
+                Sanpham tmpsp = new Sanpham();
+                int tmpi = 0;
+                int sum = 0;
+                while (list.Count > tmpi)
+                {
+                    tmpsp = s.getSP(list[tmpi].idsanpham.ToString());
+                    sum += (tmpsp.gia * list[tmpi].soluong);
+                    tmpi++;
+                }
 
+                int giam = Convert.ToInt32(sum * 0.1);
+                int tt = sum - giam;
+                label4.Text = "Giảm: " + giam.ToString("#,##0") + " VNĐ";
+                thanhtien.Text = tt.ToString("#,##0") + " VNĐ";
+                tien.Text = tt.ToString();
+                tien.Hide();
+            }
+            if (txt.Text == "KM5")
+            {
+                Sanpham tmpsp = new Sanpham();
+                int tmpi = 0;
+                int sum = 0;
+                while (list.Count > tmpi)
+                {
+                    tmpsp = s.getSP(list[tmpi].idsanpham.ToString());
+                    sum += (tmpsp.gia * list[tmpi].soluong);
+                    tmpi++;
+                }
+
+                int giam = Convert.ToInt32(sum * 0.05);
+                int tt = sum - giam;
+                label4.Text = "Giảm: " + giam.ToString("#,##0") + " VNĐ";
+                thanhtien.Text = tt.ToString("#,##0") + " VNĐ";
+                tien.Text = tt.ToString();
+                tien.Hide();
+            }
+            if (txt.Text == "KM20")
+            {
+                Sanpham tmpsp = new Sanpham();
+                int tmpi = 0;
+                int sum = 0;
+                while (list.Count > tmpi)
+                {
+                    tmpsp = s.getSP(list[tmpi].idsanpham.ToString());
+                    sum += (tmpsp.gia * list[tmpi].soluong);
+                    tmpi++;
+                }
+
+                int giam = Convert.ToInt32(sum * 0.2);
+                int tt = sum - giam;
+                label4.Text = "Giảm: " + giam.ToString("#,##0") + " VNĐ";
+                thanhtien.Text = tt.ToString("#,##0") + " VNĐ";
+                tien.Text = tt.ToString();
+                tien.Hide();
+            }
         }
 
         private void bt_addgiohang_Click(object sender, EventArgs e)
         {
             Dathang ct = new Dathang();
-            ct.Message = thanhtien.Text;
+            ct.Message = tien.Text;
             ct.Show();
         }
     }

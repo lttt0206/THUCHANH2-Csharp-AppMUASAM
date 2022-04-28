@@ -40,7 +40,7 @@ namespace MUASAM
             this.label4 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.txt = new System.Windows.Forms.TextBox();
             this.bt_addgiohang = new FontAwesome.Sharp.IconButton();
             this.tongtien = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@ namespace MUASAM
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtBarcode);
+            this.panel1.Controls.Add(this.txt);
             this.panel1.Controls.Add(this.bt_addgiohang);
             this.panel1.Controls.Add(this.tongtien);
             this.panel1.Controls.Add(this.label1);
@@ -174,13 +174,13 @@ namespace MUASAM
             this.label3.TabIndex = 21;
             this.label3.Text = "Nhập mã khuyến mãi:";
             // 
-            // txtBarcode
+            // txt
             // 
-            this.txtBarcode.Font = new System.Drawing.Font("Nunito", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.Location = new System.Drawing.Point(226, 15);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(199, 33);
-            this.txtBarcode.TabIndex = 20;
+            this.txt.Font = new System.Drawing.Font("Nunito", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt.Location = new System.Drawing.Point(226, 15);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(199, 33);
+            this.txt.TabIndex = 20;
             // 
             // bt_addgiohang
             // 
@@ -364,7 +364,7 @@ namespace MUASAM
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.TextBox txt;
     }
 }
 

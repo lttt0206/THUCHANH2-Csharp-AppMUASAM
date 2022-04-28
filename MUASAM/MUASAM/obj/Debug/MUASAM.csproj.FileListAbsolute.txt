@@ -45,3 +45,5 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemTimkiem.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Timkiem.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemLS.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemDaxem.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.DaxemUI.resources

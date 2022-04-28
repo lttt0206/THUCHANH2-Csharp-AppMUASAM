@@ -35,5 +35,11 @@ namespace MUASAM
             Lichsudonhang ct = new Lichsudonhang();
             ct.Show();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            DaxemUI ct = new DaxemUI();
+            ct.Show();
+        }
     }
 }

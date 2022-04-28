@@ -70,10 +70,15 @@ namespace MUASAM
             SqlCommand cmd = new SqlCommand(query, conn);
             using (var reader = cmd.ExecuteReader())
             {
-                reader.Read();
-                
+                if (reader.Read())
+                {
                     h.idhinhanh = Convert.ToInt32(reader["idhinhanh"]);
                     h.linkha = reader["linkha"].ToString();
+                }              
+                else
+                {
+                    h.linkha = "?‪D:\\Csharp\\DataTH2\\xam1.jpg";
+                }    
                 
                 reader.Close();
             }
@@ -185,7 +190,7 @@ namespace MUASAM
             List<Giohang> list = new List<Giohang>();
             SqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
-            string query = "select * from Giohang";
+            string query = "select * from Giohang order by idgiohang DESC";
             SqlCommand cmd = new SqlCommand(query, conn);
             using (var reader = cmd.ExecuteReader())
             {
@@ -254,14 +259,19 @@ namespace MUASAM
         }
         public void muasanpham(int id, int soluong)
         {
-            var tmp = getSP(id.ToString()).soluong;
+            var tmp = getSP(id.ToString());
             SqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
             string query = "update Sanpham set soluong=@sl where idsanpham=@id";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("id", id);
-            cmd.Parameters.AddWithValue("sl", tmp-soluong);
+            cmd.Parameters.AddWithValue("sl", tmp.soluong-soluong);
             var tmp2 = cmd.ExecuteNonQuery();
+            string query1 = "update Sanpham set daban=@sl1 where idsanpham=@id";
+            SqlCommand cmd1 = new SqlCommand(query1, conn);
+            cmd1.Parameters.AddWithValue("id", id);
+            cmd1.Parameters.AddWithValue("sl1", tmp.daban + soluong);
+            var tmp1 = cmd1.ExecuteNonQuery();
             conn.Close();
         }
 
@@ -280,7 +290,7 @@ namespace MUASAM
             List<Sanpham> list = new List<Sanpham>();
             SqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
-            string query = "select * from YeuThich";
+            string query = "select * from YeuThich order by idyeuthich DESC";
             List<Yeuthich> list1 = new List<Yeuthich>();
             SqlCommand cmd = new SqlCommand(query, conn);
             using (var reader = cmd.ExecuteReader())
@@ -333,7 +343,7 @@ namespace MUASAM
             List<Donhang> list = new List<Donhang>();
             SqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
-            string query = "select * from Donhang";
+            string query = "select * from Donhang order by iddonhang DESC";
             SqlCommand cmd = new SqlCommand(query, conn);
             using (var reader = cmd.ExecuteReader())
             {
@@ -351,6 +361,34 @@ namespace MUASAM
                     });
                 }
                 reader.Close();
+            }
+            conn.Close();
+            return list;
+        }
+        public List<Sanpham> sqlGetSanphamDaxem()
+        {
+            List<Sanpham> list = new List<Sanpham>();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from Daxem order by iddaxemDESC ";
+            List<Yeuthich> list1 = new List<Yeuthich>();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    list1.Add(new Yeuthich()
+                    {
+                        idsanpham = Convert.ToInt32(reader["idsanpham"])
+                    });
+                }
+                reader.Close();
+            }
+            int i = 0;
+            while (list1.Count > i)
+            {
+                list.Add(getSP(list1[i].idsanpham.ToString()));
+                i++;
             }
             conn.Close();
             return list;

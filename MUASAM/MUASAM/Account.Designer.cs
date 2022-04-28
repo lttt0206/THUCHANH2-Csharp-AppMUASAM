@@ -37,8 +37,11 @@ namespace MUASAM
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -96,7 +99,7 @@ namespace MUASAM
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Location = new System.Drawing.Point(0, 161);
+            this.panel2.Location = new System.Drawing.Point(0, 255);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(784, 88);
             this.panel2.TabIndex = 22;
@@ -120,6 +123,34 @@ namespace MUASAM
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.iconButton3);
+            this.panel3.Location = new System.Drawing.Point(0, 161);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(784, 88);
+            this.panel3.TabIndex = 23;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Yoast;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.iconButton3.Location = new System.Drawing.Point(3, 3);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(769, 82);
+            this.iconButton3.TabIndex = 2;
+            this.iconButton3.Text = "<      SẢN PHẨM XEM GẦN ĐÂY";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -127,6 +158,7 @@ namespace MUASAM
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(784, 619);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_head);
@@ -143,6 +175,7 @@ namespace MUASAM
             this.Load += new System.EventHandler(this.Barcode_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +188,8 @@ namespace MUASAM
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton iconButton3;
     }
 }
 
