@@ -47,3 +47,17 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemLS.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.XemthemDaxem.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.DaxemUI.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Hoadon.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\RdlCompile.cache
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\RdlCompile.compiled
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\obj\Debug\MUASAM.Barcode2.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.Video.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.xml
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.Video.xml
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH2\MUASAM\MUASAM\MUASAM\bin\Debug\AForge.Video.DirectShow.xml

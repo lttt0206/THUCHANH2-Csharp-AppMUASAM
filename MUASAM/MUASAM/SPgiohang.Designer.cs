@@ -151,12 +151,13 @@ namespace MUASAM
             this.bt_tru1.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_tru1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_tru1.IconSize = 20;
-            this.bt_tru1.Location = new System.Drawing.Point(225, 105);
+            this.bt_tru1.Location = new System.Drawing.Point(152, 105);
             this.bt_tru1.Name = "bt_tru1";
             this.bt_tru1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.bt_tru1.Size = new System.Drawing.Size(32, 36);
             this.bt_tru1.TabIndex = 21;
             this.bt_tru1.UseVisualStyleBackColor = false;
+            this.bt_tru1.Click += new System.EventHandler(this.bt_tru1_Click);
             // 
             // bt_cong1
             // 
@@ -169,12 +170,13 @@ namespace MUASAM
             this.bt_cong1.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_cong1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_cong1.IconSize = 20;
-            this.bt_cong1.Location = new System.Drawing.Point(149, 105);
+            this.bt_cong1.Location = new System.Drawing.Point(223, 105);
             this.bt_cong1.Name = "bt_cong1";
             this.bt_cong1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.bt_cong1.Size = new System.Drawing.Size(32, 36);
             this.bt_cong1.TabIndex = 20;
             this.bt_cong1.UseVisualStyleBackColor = false;
+            this.bt_cong1.Click += new System.EventHandler(this.bt_cong1_Click);
             // 
             // bt_xoa1
             // 
@@ -230,10 +232,10 @@ namespace MUASAM
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.soluong2);
             this.panel2.Controls.Add(this.ma2);
             this.panel2.Controls.Add(this.tien2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.soluong2);
             this.panel2.Controls.Add(this.tensp2);
             this.panel2.Controls.Add(this.bt_tru2);
             this.panel2.Controls.Add(this.gia2);
@@ -317,12 +319,13 @@ namespace MUASAM
             this.bt_tru2.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_tru2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_tru2.IconSize = 20;
-            this.bt_tru2.Location = new System.Drawing.Point(225, 105);
+            this.bt_tru2.Location = new System.Drawing.Point(152, 105);
             this.bt_tru2.Name = "bt_tru2";
             this.bt_tru2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.bt_tru2.Size = new System.Drawing.Size(32, 36);
             this.bt_tru2.TabIndex = 29;
             this.bt_tru2.UseVisualStyleBackColor = false;
+            this.bt_tru2.Click += new System.EventHandler(this.bt_tru2_Click);
             // 
             // gia2
             // 
@@ -346,12 +349,13 @@ namespace MUASAM
             this.bt_cong2.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_cong2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_cong2.IconSize = 20;
-            this.bt_cong2.Location = new System.Drawing.Point(149, 105);
+            this.bt_cong2.Location = new System.Drawing.Point(225, 105);
             this.bt_cong2.Name = "bt_cong2";
             this.bt_cong2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.bt_cong2.Size = new System.Drawing.Size(32, 36);
             this.bt_cong2.TabIndex = 28;
             this.bt_cong2.UseVisualStyleBackColor = false;
+            this.bt_cong2.Click += new System.EventHandler(this.bt_cong2_Click);
             // 
             // xoa2
             // 
@@ -462,12 +466,13 @@ namespace MUASAM
             this.tru3.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.tru3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.tru3.IconSize = 20;
-            this.tru3.Location = new System.Drawing.Point(225, 106);
+            this.tru3.Location = new System.Drawing.Point(152, 106);
             this.tru3.Name = "tru3";
             this.tru3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.tru3.Size = new System.Drawing.Size(32, 36);
             this.tru3.TabIndex = 37;
             this.tru3.UseVisualStyleBackColor = false;
+            this.tru3.Click += new System.EventHandler(this.tru3_Click);
             // 
             // gia3
             // 
@@ -491,12 +496,13 @@ namespace MUASAM
             this.cong3.IconColor = System.Drawing.SystemColors.ControlLightLight;
             this.cong3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.cong3.IconSize = 20;
-            this.cong3.Location = new System.Drawing.Point(149, 106);
+            this.cong3.Location = new System.Drawing.Point(223, 106);
             this.cong3.Name = "cong3";
             this.cong3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.cong3.Size = new System.Drawing.Size(32, 36);
             this.cong3.TabIndex = 36;
             this.cong3.UseVisualStyleBackColor = false;
+            this.cong3.Click += new System.EventHandler(this.cong3_Click);
             // 
             // xoa3
             // 

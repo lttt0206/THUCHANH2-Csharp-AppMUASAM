@@ -155,5 +155,104 @@ namespace MUASAM
             this.Invalidate();
             panel3.Hide();
         }
+
+        private void bt_cong1_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            Sanpham sp = s.getSP(ma1.Text);
+            int tmp = Convert.ToInt32(soluong1.Text);
+            if (tmp < sp.soluong)
+            {
+                s.conggiohang(ma1.Text, tmp);
+                soluong1.Text = (tmp + 1).ToString();
+            }
+            else
+            {
+                Notification ct = new Notification();
+                ct.Message = "Đã đạt số lượng tối đa";
+                ct.Show();
+            }
+        }
+
+        private void bt_tru1_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            int tmp = Convert.ToInt32(soluong1.Text);
+            if (tmp > 1)
+            {
+                s.trugiohang(ma1.Text, tmp);
+                soluong1.Text = (tmp - 1).ToString();
+            }
+            else
+            {
+                s.xoaspgiohang(ma1.Text);
+            }
+        }
+
+        private void bt_tru2_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            int tmp = Convert.ToInt32(soluong2.Text);
+            if (tmp > 1)
+            {
+                s.trugiohang(ma2.Text, tmp);
+                soluong2.Text = (tmp - 1).ToString();
+            }
+            else
+            {
+                s.xoaspgiohang(ma2.Text);
+            }
+        }
+
+        private void bt_cong2_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            Sanpham sp = s.getSP(ma2.Text);
+            int tmp = Convert.ToInt32(soluong2.Text);
+            if (tmp < sp.soluong)
+            {
+                s.conggiohang(ma2.Text, tmp);
+                soluong2.Text = (tmp + 1).ToString();
+            }
+            else
+            {
+                Notification ct = new Notification();
+                ct.Message = "Đã đạt số lượng tối đa";
+                ct.Show();
+            }
+        }
+
+        private void tru3_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            int tmp = Convert.ToInt32(soluong3.Text);
+            if (tmp > 1)
+            {
+                s.trugiohang(ma3.Text, tmp);
+                soluong3.Text = (tmp - 1).ToString();
+            }
+            else
+            {
+                s.xoaspgiohang(ma3.Text);
+            }
+        }
+
+        private void cong3_Click(object sender, EventArgs e)
+        {
+            Xuly_Data s = new Xuly_Data();
+            Sanpham sp = s.getSP(ma3.Text);
+            int tmp = Convert.ToInt32(soluong3.Text);
+            if (tmp < sp.soluong)
+            {
+                s.conggiohang(ma3.Text, tmp);
+                soluong3.Text = (tmp + 1).ToString();
+            }
+            else
+            {
+                Notification ct = new Notification();
+                ct.Message = "Đã đạt số lượng tối đa";
+                ct.Show();
+            }
+        }
     }
 }

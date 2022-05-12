@@ -370,7 +370,7 @@ namespace MUASAM
             List<Sanpham> list = new List<Sanpham>();
             SqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
-            string query = "select * from Daxem order by iddaxemDESC ";
+            string query = "select * from Daxem order by iddaxem DESC ";
             List<Yeuthich> list1 = new List<Yeuthich>();
             SqlCommand cmd = new SqlCommand(query, conn);
             using (var reader = cmd.ExecuteReader())
@@ -392,6 +392,52 @@ namespace MUASAM
             }
             conn.Close();
             return list;
+        }
+        public Giohang getGiohang(string id)
+        {
+            Giohang g = new Giohang();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "select * from Giohang where idgiohang="+id;
+            SqlCommand cmd = new SqlCommand(query, conn);
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+
+                    g.idsanpham = Convert.ToInt32(reader["idsanpham"]);
+                    g.soluong = Convert.ToInt32(reader["soluong"]);
+                   
+                }
+                reader.Close();
+            }
+            conn.Close();
+            return g;
+        }
+        public void trugiohang(string id, int sl)
+        {
+            sl -= 1;
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "update Giohang set soluong=@sl where idsanpham=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("sl", sl);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void conggiohang(string id, int sl)
+        {
+            sl += 1;
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "update Giohang set soluong=@sl where idsanpham=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("sl", sl);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }
